@@ -6,6 +6,13 @@
 
 ## Introduction
 
+With climate change becoming a increasing urgent problem in our lives, [vehicle numbers globally now at an estimated 1.446 billion](https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world/) and [80% of lung diseases being caused by car pollution](https://study.com/academy/lesson/car-pollution-facts-lesson-for-kids.html#:~:text=Car%20engines%20release%20poisonous%20gases,a%20result%20of%20car%20pollution.) there is a no better time to start looking for more eco-friedly vehicles for the planets health and our own. Electic Vehicles (EVs) and Hybrid Vehicles are improving rapidly and if more people moved to the alternatives then maufactures would be motivated to put more money and emphasis into development of these vehicles. With [One-fifth of Europe's greenhouse gases coming from the transportation sector alone](https://www.virta.global/blog/electric-cars-pollution-facts), this is a massive market which could play a major part in our planets future.
+
+
+To help educate and encourage the everyday motorist to consider moving to an alternativly fueled vehicle, we have created a website that easily provides the user with more eco-friendly alternatives to the type of vehicle they are looking for. The website also provides more information about the problems and threats caused by ICEs and what the benefits of making a change could be, for the enviroment and the motorist.
+
+This project has been build as part of Code Institutes Earth Day Hackathon Event April 2022 by TEAM_4.
+
 ## **STRATEGY**
 
 ### **Project Goals**
@@ -14,9 +21,25 @@
 
 ### **User Demographic**
 
-### **Value for the User/Customer**
+### **Value for the User**
+
+- Learn more about the issues caused by using traditional fuel types and the benefits of alternatives
+- Easily find vehicles that use alternative power sources that I am interested in and would suit the users needs
+- Calculate possible savings by moving to an alternative fuel
+- Easily find retailers that have a chosen vehicle available for purchase
 
 ## **User Stories**
+
+| ID | As a... | I Want To Be Able To... | So That I Can...|
+| --- | --- | --- | --- |
+| 01 | User | Find more information about the website | Understand what the website is designed for and what it can do for me |
+| 02 | User | Learn more about the problems caused by using traditionially fueled vehicles | Understand the problems and see the benefit if changing vehicle power sources |
+| 03 | User | Choose what type or style of vehicle that I am looking for | Be shown approptiate vehicle options that are more eco-friendly |
+| 04 | User | Sort or filter the vehicles displayed to me | Refine the options to those I am more likely to want to see |
+| 05 | User | View information about individual vehicles | Decide if the vehicle I am reading about is perfect for me |
+| 06 | User | Easily find a link to Retailer websites | View up to date prices and make a purchase if I want to |
+| 07 | User | Save any vehicles that I am interested in | Easily referance them in the future |
+| 08 | User | Calculate how much I could save on fuel moving to an alternative | See the financial benefit of changing vehicle |
 
 ## **SCOPE**
 
