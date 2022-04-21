@@ -1,9 +1,8 @@
 # Pull Request Title
 
 ## Pull Request References:
-- PLEASE IDENTIFY THE ISSUE/FEATURE/TASK THIS PR IS ASSOCIATED WITH. E.G:
-    - #U01 👈 Notice the `#`, followed by the Prefix Category of `U`, and then the feature number `01`
-    - If you are not sure where to find the issue, feel free to use the Direct URL to the Issue itself.
+- Which issue/task is this PR resolving
+  - Please reference the issue/task by using `#` followed by the issue's number (example: `#05`)ss
 
 ## Description:
 - Brief summary of your PR
