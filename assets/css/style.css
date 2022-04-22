@@ -75,6 +75,21 @@ p.lead {
     font-weight: 400;
 }
 
+.btn.btn-main.btn-lg,
+.btn.btn-main.btn-lg.cta-button {
+    font-family: 'futura-pt', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 1.4rem;
+    background-color: #9df19c;
+    border: none;
+}
+
+.btn.btn-main.btn-lg:hover,
+.btn.btn-main.btn-lg.cta-button:hover {
+    background-color: #b6f5b5;
+}
+
 /* Footer */
 footer {
     font-family: 'futura-pt', sans-serif;
