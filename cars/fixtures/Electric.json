@@ -1,0 +1,241 @@
+[{
+  "_id": {
+    "$oid": "6261e231692ec77271722f35"
+  },
+  "img": "https://www.evspecifications.com/images/model/cb4ffc/320/main.jpg",
+  "MODEL": "Mii electric",
+  "MANUFACTURER": "SEAT",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "61 kW",
+  "BATTERY CAPACITY": "36.8 kWh",
+  "m/kWh": "0.41 kWh",
+  "PRICE": "22,000 USD"
+},{
+  "_id": {
+    "$oid": "6261e6cd2f2f376eabd2aedc"
+  },
+  "img": "https://www.evspecifications.com/images/model/7700e2/320/main.jpg",
+  "MODEL": "Model S Performance",
+  "MANUFACTURER": "Tesla",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "375 kW",
+  "BATTERY CAPACITY": "100 kWh",
+  "m/kWh": "0.31 kWh",
+  "PRICE": "94,990 USD"
+},{
+  "_id": {
+    "$oid": "6261e6cf2f2f376eabd2aedd"
+  },
+  "img": "https://www.evspecifications.com/images/model/fb90db/320/main.jpg",
+  "MODEL": "500e",
+  "MANUFACTURER": "Fiat",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "83 kW",
+  "BATTERY CAPACITY": "24 kWh",
+  "m/kWh": "0.3 kWh",
+  "PRICE": "32,500 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d12f2f376eabd2aede"
+  },
+  "img": "https://www.evspecifications.com/images/model/cd6382/320/main.jpg",
+  "MODEL": "i3 42 kWh",
+  "MANUFACTURER": "BMW",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "125 kW",
+  "BATTERY CAPACITY": "42.2 kWh",
+  "m/kWh": "0.29 kWh",
+  "PRICE": "44,450 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d32f2f376eabd2aedf"
+  },
+  "img": "https://www.evspecifications.com/images/model/f3eaec/320/main.jpg",
+  "MODEL": "Mustang Mach-E Select RWD",
+  "MANUFACTURER": "Ford",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "198 kWh",
+  "BATTERY CAPACITY": "75.7",
+  "m/kWh": "0.34 kWh",
+  "PRICE": "43,895 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d42f2f376eabd2aee0"
+  },
+  "img": "https://www.evspecifications.com/images/model/0c8c11f/320/main.jpg",
+  "MODEL": "KONA SE",
+  "MANUFACTURER": "Hyundai",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "100 kW",
+  "BATTERY CAPACITY": "39.2 kWh",
+  "m/kWh": "0.27 kWh",
+  "PRICE": "28,450 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d62f2f376eabd2aee1"
+  },
+  "img": "https://www.evspecifications.com/images/model/ced6a3/320/main.jpg",
+  "MODEL": "IONIQ",
+  "MANUFACTURER": "Hyundai",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "101 kW",
+  "BATTERY CAPACITY": "38.3 kWh",
+  "m/kWh": "0.25 kWh",
+  "PRICE": "47,140 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d72f2f376eabd2aee2"
+  },
+  "img": "https://www.evspecifications.com/images/model/b1159f/320/main.jpg",
+  "MODEL": "Soul EV",
+  "MANUFACTURER": "KIA",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "81 kW",
+  "BATTERY CAPACITY": "31.8 kWh",
+  "m/kWh": "0.31 kWh",
+  "PRICE": "21,430 USD"
+},{
+  "_id": {
+    "$oid": "6261e6d92f2f376eabd2aee3"
+  },
+  "img": "https://www.evspecifications.com/images/model/42896e/320/main.jpg",
+  "MODEL": "e-Niro 64 kWh",
+  "MANUFACTURER": "KIA",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "150 kW",
+  "BATTERY CAPACITY": "64 kWh",
+  "m/kWh": "0.3 kWh",
+  "PRICE": "38,500 USD"
+},{
+  "_id": {
+    "$oid": "6261e6db2f2f376eabd2aee4"
+  },
+  "img": "https://www.evspecifications.com/images/model/e7efcb/320/main.jpg",
+  "MODEL": "Cooper SE Level II",
+  "MANUFACTURER": "MINI",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "135 kW",
+  "BATTERY CAPACITY": "32.6 kWh",
+  "m/kWh": "0.31 kWh",
+  "PRICE": "34,750 USD"
+},{
+  "_id": {
+    "$oid": "6261e6f92f2f376eabd2aee5"
+  },
+  "img": "https://www.evspecifications.com/images/model/f17918/320/main.jpg",
+  "MODEL": "Leaf SV",
+  "MANUFACTURER": "Nissan",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "110 kW",
+  "BATTERY CAPACITY": "40 kWh",
+  "m/kWh": "0.32 kWh",
+  "PRICE": "32,600 USD"
+},{
+  "_id": {
+    "$oid": "626272712f2f376eabd2aee6"
+  },
+  "img": "https://www.evspecifications.com/images/model/c89bf9/320/main.jpg",
+  "MODEL": "Twingo Electric Life",
+  "MANUFACTURER": "Renault",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "60 kW",
+  "BATTERY CAPACITY": "22 kWh",
+  "m/kWh": "0.38 kWh",
+  "PRICE": "25,500 USD"
+},{
+  "_id": {
+    "$oid": "62629a747858ea130968e7aa"
+  },
+  "img": "https://www.evspecifications.com/images/model/ce47f0/320/main.jpg",
+  "MODEL": "Cybertruck Tri Motor ADW",
+  "MANUFACTURER": "Tesla",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "44 million horsepower",
+  "BATTERY CAPACITY": "Rocket size kWh",
+  "m/kWh": " Hypersonic kWh",
+  "PRICE": "69,900 USD"
+},{
+  "_id": {
+    "$oid": "62629acb7858ea130968e7ab"
+  },
+  "img": "https://www.evspecifications.com/images/model/4c9afb/320/main.jpg",
+  "MODEL": "XC40 Recharge P8 AWD",
+  "MANUFACTURER": "Volvo",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "150 kW",
+  "BATTERY CAPACITY": "78 kWh",
+  "m/kWh": "0.43 kWh",
+  "PRICE": "56,395 USD"
+},{
+  "_id": {
+    "$oid": "62629ad77858ea130968e7ac"
+  },
+  "img": "https://www.evspecifications.com/images/model/6467b3/320/main.jpg",
+  "MODEL": "Tycan Turbo S",
+  "MANUFACTURER": "Porsche",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "160 kW",
+  "BATTERY CAPACITY": "93.4 kWh",
+  "m/kWh": "0.5 kWh",
+  "PRICE": "187,610 UDS"
+},{
+  "_id": {
+    "$oid": "62629ae17858ea130968e7ad"
+  },
+  "img": "https://www.evspecifications.com/images/model/d7bdc9/320/main.jpg",
+  "MODEL": "2 Performance Package",
+  "MANUFACTURER": "Polestar",
+  "VEHICLE CLASS": "Mid-Size",
+  "ENGINE POWER": "300 kW",
+  "BATTERY CAPACITY": "78 kWh",
+  "m/kWh": "0.37 kWh",
+  "PRICE": "63,000 USD"
+},{
+  "_id": {
+    "$oid": "62629ae77858ea130968e7ae"
+  },
+  "img": "https://www.evspecifications.com/images/model/f01116f/320/main.jpg",
+  "MODEL": "EQC 400 4MATIC AMG Edition Premium Plus",
+  "MANUFACTURER": "Mercedes-Benz",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "300 kW",
+  "BATTERY CAPACITY": "80 kWh",
+  "m/kWh": " 0.35 kWh",
+  "PRICE": "67,900 USD"
+},{
+  "_id": {
+    "$oid": "62629aed7858ea130968e7af"
+  },
+  "img": "https://www.evspecifications.com/images/model/189c93/320/main.jpg",
+  "MODEL": "I-Pace",
+  "MANUFACTURER": "Jaguar",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "147 kW",
+  "BATTERY CAPACITY": "90 kWh",
+  "m/kWh": " 0.44 kWh",
+  "PRICE": "69,500 USD"
+},{
+  "_id": {
+    "$oid": "62629af27858ea130968e7b0"
+  },
+  "img": "https://www.evspecifications.com/images/model/818469/320/main.jpg",
+  "MODEL": "e-tron 55 quattro Prestige",
+  "MANUFACTURER": "Audi",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "140 kW",
+  "BATTERY CAPACITY": "95 kWh",
+  "m/kWh": "0.46 kWh",
+  "PRICE": "81,800 USD"
+},{
+  "_id": {
+    "$oid": "62629af77858ea130968e7b1"
+  },
+  "img": "https://www.evspecifications.com/images/model/2d24e4/320/main.jpg",
+  "MODEL": "Model X Performance (PMSR)",
+  "MANUFACTURER": "Tesla",
+  "VEHICLE CLASS": "SUV",
+  "ENGINE POWER": "375 kW",
+  "BATTERY CAPACITY": "100 kWh",
+  "m/kWh": "0.43 kWh",
+  "PRICE": "99,990 USD"
+}]
