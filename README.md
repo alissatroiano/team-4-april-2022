@@ -55,7 +55,8 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 ## Topology
 
 ## Database Schema
-
+The Database has been created with [MongoDB](https://www.mongodb.com/) and exported as Json file:
+![database](https://github.com/alissatroiano/team-4-april-2022/tree/main/docs/readme_img/firstDBschema.png?raw=true)
 
 ## **SKELETON**
 
@@ -127,6 +128,8 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 
 - [Google Chrome Development Tools](https://developer.chrome.com/docs/devtools/) - Design/Development Tools
 - [Balsamiq](https://balsamiq.com/) - Wireframe designer software
+- [MongoDB Compass](https://www.mongodb.com/products/compass) - GUI of MongoDB
+- [Dbdiagram.io](https://dbdiagram.io/) - Data Schema drawing
 </details>
 
 <details>
@@ -158,9 +161,15 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 ### **Code snippets**
 
 ### **Resources**
+- [EvSpecifications](https://www.evspecifications.com/) 
+    Source for the data of the cars 
+- [kWh Calculator](https://www.inchcalculator.com/convert/kilowatt-hour-per-hundred-kilometers-to-mile-per-kilowatt-hour/)
+    Calculator to verify the mi/kWh
 
 ### **Content**
 
 ### **Media**
+- [EvSpecifications](https://www.evspecifications.com/) 
+    Source for the images of the cars in the database
 
 ### **Acknowledgements**
