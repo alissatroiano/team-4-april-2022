@@ -20,6 +20,8 @@
 /* Main */
 main {
     padding: 1rem;
+    height: auto;
+    overflow: auto;
 }
 
 .font-dark {
@@ -64,6 +66,16 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--p-blue-1);
 }
 /* Landing Page */
+
+.jumbotron {
+    height: 50vh;
+}
+
+
+#btn-main-2{
+    background-color: #79C1CC;
+}
+
 h1.display-4 {
     margin-top: 30px;
     font-family: 'Oswald', sans-serif;
