@@ -4,8 +4,13 @@
 - Which issue/task is this PR resolving
   - Please reference the issue/task by using `#` followed by the issue's number (example: `#05`)ss
 
-## Description:
-- Brief summary of your PR
+## PR Includes:
+
+### ADDITIONS
+
+### UPDATES
+
+### DELETED/REMOVED ITEMS/FEATURES
 
 ## Breaking changes
 - Let us know if there are any breaking changes here or simply enter, 'none'
