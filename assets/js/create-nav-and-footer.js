@@ -48,9 +48,8 @@ function createFooter () {
       </div>
       <div class="col-4 justify-content-center d-flex">
         <ul class="nav list-unstyled">
-          <li class="mx-3"><a class="link-secondary" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li class="mx-3"><a class="link-secondary" href="#"></a><i class="fab fa-facebook"></i></li>
-          <li class="mx-3"><a class="link-secondary" href="#"></a><i class="fab fa-linkedin"></i></li>
+          <li class="mx-3"><a class="link-secondary" href="https://www.earthday.org/"><i class="fas fa-globe-africa"></i></a></li>
+          <li class="mx-3"><a class="link-secondary" href="https://github.com/alissatroiano/team-4-april-2022"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </footer>
