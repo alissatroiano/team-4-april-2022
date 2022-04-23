@@ -32,7 +32,7 @@ function createNavbar () {
 function createFooter () {
     container = document.getElementById("footer-container")
     container.innerHTML = `
-    <footer class="flex-wrap fixed-bottom d-none d-md-flex justify-content-between align-items-center py-3 border-top">
+    <footer class="flex-wrap d-none d-md-flex justify-content-between align-items-center py-3 border-top">
       <div class="col-4 d-flex align-items-center">
         <span class="text-muted footer-text ms-3 ms-md-5">©2022 Electrillo </span>
       </div>
