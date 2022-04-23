@@ -23,80 +23,166 @@
 </head>
 
 <body>
-    <!--header-->
-    <header>
-      <div id="navbar-container"></div>
-    </header>
-    
-    <!--section for questions-->
-    <section class="questions" id="question-section">
-        <div class="container-fluid p-3 p-md-5">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="display-4 mb-3 my-3 md-md-4">Start Giving Back Today</h1>
-                    <p class="lead">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
-                        protecting the planet</p>
-                    </p>
-                </div>
-            </div>
-            <!-- Use JavaScript to manipulate HTML in the placement section code below -->
-            <div class="row mt-3 mt-md-4 car-size-question">
-                <div class="col-12">
-                    <h4 class="question-header mb-3 mb-md-5">What kind of car?</h4>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                    <div class="card h-100" id="sizeCompact" onclick="selectCarSize(this.id)">
-                       <img src="" class="img-fluid" />
-                       <i class="fas fa-car fa-3x text-center"></i>
-                        <div class="card-body py-5">
-                          <div class="card-title"></div>
-                          <p class="card-text"></p>
-                          <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-xs-8 col-sm-4">
-                    <div class="card" id="sizeMed" onclick="selectCarSize(this.id)">
-                        <div class="card-header">
-                            <h5 class="card-title">Mid-Size</h5>
-                        </div>
-                        <div class="card-body py-5">
-                            <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                    <div class="card h-100" id="sizeSUV" onclick="selectCarSize(this.id)">
-                        <div class="card-header">
-                            <h5 class="card-title">SUV</h5>
-                        </div>
-                        <div class="card-body py-5">
-                            <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!--header-->
+  <header>
+    <div id="navbar-container"></div>
+  </header>
 
-    <!--footer-->
-    <div id="footer-container" class="container"></div>
+  <!--section for questions-->
+  <section class="questions container-fluid" id="question-section">
+    <div class="row mt-5 pt-5" id="questions-title">
+      <div class="col-12 mt-md-5">
+        <h1 class="display-4 mb-3 my-3 md-md-4">Start Giving Back Today</h1>
+        <p class="lead">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
+          protecting the planet</p>
+        </p>
+      </div>
+    </div>
+    <!-- Use JavaScript to manipulate HTML in the placement section code below -->
+    <div class="row p-3 p-md-5 mt-3 mt-md-4 car-size-question">
+      <div class="col-12">
+        <h4 class="question-header mb-3 mb-md-5">What kind of car?</h4>
+      </div>
+      <div class="col-xs-8 col-sm-4">
+        <div class="card" id="sizeCompact" onclick="selectCarSize(this.id)">
+          <img src="" class="img-fluid" />
+          <div class="card-header">
+            <h5 class="card-title">Compact</h5>
+          </div>
+          <div class="card-body py-5">
+            <i class="fas fa-car fa-3x"></i>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-8 col-sm-4">
+        <div class="card" id="sizeMed" onclick="selectCarSize(this.id)">
+          <div class="card-header">
+            <h5 class="card-title">Mid-Size</h5>
+          </div>
+          <div class="card-body py-5">
+            <i class="fas fa-car fa-3x"></i>
+            <a href="#" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-8 col-sm-4">
+        <div class="card h-100" id="sizeSUV" onclick="selectCarSize(this.id)">
+          <div class="card-header">
+            <h5 class="card-title">SUV</h5>
+          </div>
+          <div class="card-body py-5">
+            <i class="fas fa-car fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <div class="container p-3 p-md-5 miles-section" id="annualMiles">
+      <!-- Use JavaScript to manipulate HTML in the placement section code below -->
+      <div class="row mt-3 mt-md-4 annual-mileage-question" id="annualMiles">
+        <div class="col-12">
+          <h4 class="question-header mb-3 mb-md-5">What is your average annual mileage?</h4>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="lowRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="midRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="highRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-3 p-md-5 budget-section" id="budgetSection">
+      <!-- Use JavaScript to manipulate HTML in the placement section code below -->
+      <div class="row mt-3 mt-md-4 annual-mileage-question" id="annualMiles">
+        <div class="col-12">
+          <h4 class="question-header mb-3 mb-md-5">What is your average annual mileage?</h4>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="lowRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="midRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="highRange" onclick="selectMiles(this.id)">
+            <img src="" class="img-fluid" />
+            <i class="fas fa-clock fa-3x text-center"></i>
+            <div class="card-body py-5">
+              <div class="card-title"></div>
+              <p class="card-text"></p>
+              <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--footer-->
+  <div id="footer-container" class="container d-none"></div>
 
   <!-- Local Script Links -->
   <script src="assets/js/create-nav-and-footer.js"></script>
   <script src="assets/js/script.js"></script>
-  
+
   <!--Bootstrap JS Bundle-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-  crossorigin="anonymous"></script>
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-  crossorigin="anonymous"></script>
-  
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
   <script src="assets/js/fuel-saving-calculator.js"></script>
 
 </body>
+
 </html>
-  
