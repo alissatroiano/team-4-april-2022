@@ -29,389 +29,203 @@
   </header>
 
   <!--section for questions-->
-  <section class="questions container-fluid" id="question-section">
-        <div class="row mt-5">
-          <div class="col-md-12 text-center">
-            <h1 class="display-4 mb-3 my-3 md-md-4">Start Giving Back Today</h1>
-            <p class="lead">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
-              protecting the planet.
-            </p>
+  <section class="questions" id="question-section">
+    <div class="container jumbotron p-2 p-md-4">
+      <div class="row mt-5">
+        <div class="col-md-12 text-center">
+          <h1 class="display-4 mb-3 my-3 md-md-4">Start Giving Back Today</h1>
+          <p class="lead">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
+            protecting the planet.
+          </p>
+          <hr>
+        </div>
+      </div>
+      <!-- Use JavaScript to manipulate HTML in the placement section code below -->
+      <div class="row mt-3 mt-md-4 car-size-question">
+        <div class="col-12 mt-4">
+          <h3 class="question-header text-center mb-3 mb-md-5">Which size of car would you like?</h3>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card" id="Compact" onclick="selectCarSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title text-center"> Compact </h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x text-center"></i>
+            </div>
           </div>
         </div>
-        
-        <hr>
-        <!-- Use JavaScript to manipulate HTML in the placement section code below -->
-        <div class="row mt-3 mt-md-4 car-size-question">
-          <div class="col-12 mt-4">
-            <h3 class="question-header mb-3 mb-md-5">Which size of car would you like?</h3>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card" id="Med" onclick="selectCarSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title text-center">Mid-Size</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
           </div>
-          <div class="col-xs-8 col-sm-4">
-            <div class="card h-100 card-question" id="Compact" onclick="selectCarSize(this.id)">
-              <div class="card" id="Compact" onclick="selectCarSize(this.id)">
-                <div class="card-header">
-                  <h5 class="card-title"> Compact </h5>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card" id="SUV" onclick="selectCarSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">SUV</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="btn-row">
+          <btn class="btn btn-primary btn-lg btn-block mt-5">Next</btn>
+        </div>
+      </div>
+      <!-- Budget question -->
+      <div class="row mt-3 mt-md-4 budget-question">
+        <div class="col-12">
+          <h4 class="question-header mb-3 mb-md-5">What is your budget?</h4>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="Under30" onclick="selectBudgetSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">Under $30,000</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card" id="30To50" onclick="selectBudgetSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">$30,000 - $50,000</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="Over50" onclick="selectBudgetSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">Over $50,000</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mileage question -->
+      <div class="row mt-3 mt-md-4 annual-mileage-question">
+        <div class="col-12">
+          <h4 class="question-header mb-3 mb-md-5">What is your average yearly mileage?</h4>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="10k" onclick="selectMileageSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">10,000 miles per year</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card" id="15k" onclick="selectMileageSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">15,000 miles per year</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4">
+          <div class="card h-100" id="20k" onclick="selectMileageSize(this.id)">
+            <div class="card-header">
+              <h5 class="card-title">20,000 miles per year</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="additionFuelCaculationOptionsSection">
+        <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#additionFuelCaculationOptions" aria-expanded="false"
+          aria-controls="additionFuelCaculationOptions">
+          Additional Options
+        </button>
+        <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#calculatorExplanation" aria-expanded="false" aria-controls="calculatorExplanation">
+          How Are We Calculating this?
+        </button>
+        <div class="collapse my-3" id="calculatorExplanation">
+          <div class="card card-body">
+            <h4>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h4>
+            <ul>
+              <li> Gass Prices </li>
+              <li> Household Electricity Cost per kWh</li>
+              <li> Car MPG </li>
+              <li> Car Mileage </li>
+            </ul>
+            <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a
+              Internal Combusting Engine</p>
+            <p>These values will change if you add information into the Additional Options tab to enable you to have a
+              more personalised savings calculation</p>
+          </div>
+        </div>
+        <div class="collapse my-3" id="additionFuelCaculationOptions">
+          <div class="card card-body">
+            <h4>For a more accurate savings calulation, please input the data requested below</h4>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <p>Please enter your <strong>Local Fuel Price</strong> per gallon in USD</p>
+                <div class="input-group">
+                  <span class="input-group-text" id="basic-addon1">Fuel Price ($): </span>
+                  <input type="number" step=".01" id="customFuelPrice" class="form-control" placeholder="Fuel Price"
+                    aria-label="Fuel Price" aria-describedby="basic-addon1" pattern="^\d*(\.\d{0,2})?$">
                 </div>
-                <div class="card-body py-5">
-                  <img src="" class="img-fluid" />
-                  <i class="fas fa-car fa-3x text-center"></i>
-                  <a href="#" class="btn stretched-link">
-                    <p class="card-text"></p>
-                  </a>
+                <p id="mpgValidatorErrorMessage" class="mb-0 text-small text-danger">&nbsp</p>
+                <p>If you are unsure about your current fuel prices, check <a
+                    href="https://gasprices.aaa.com/state-gas-price-averages/" target="_blank">the AAA website</a> for
+                  state by state average fuel prices</p>
+                <hr>
+                <div class="yearlyMileageInputContainer mt-3">
+                  <p>Please use the slider to select your <strong>Average Yearly Mileage</strong></p>
+                  <label for="mpgRange" class="form-label"><span class="fw-bold" id="mileageValue"></span> Miles A
+                    Year</label>
+                  <input type="range" min="10000" max="80000" step="5000" class="form-range" id="mileageRange">
+                  <button class="btn btn-primary mt-3" onclick="clearMileageSelection()">Clear Yearly Mileage
+                    Selection</button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <hr>
+                <div class="averageMPGInputContainer">
+                  <p>Please use the slider to select the <strong>Average MPG of your vehicle</strong></p>
+                  <label for="mpgRange" class="form-label"><span class="fw-bold" id="mpgValue"></span> Miles Per
+                    Gallon</label>
+                  <input type="range" min="5" max="95" class="form-range" id="mpgRange">
+                  <button class="btn btn-primary mt-3" onclick="clearMPGSelection()">Clear MPG Selection</button>
                 </div>
               </div>
             </div>
-            </div>
-            <div class="col-xs-8 col-sm-4">
-              <div class="card card-question" id="Med" onclick="selectCarSize(this.id)">
-                <div class="card-header">
-                  <h5 class="card-title">Mid-Size</h5>
-                </div>
-                <div class="card-body py-5">
-                  <a href="#" class="btn stretched-link">
-                    <i class="fas fa-car fa-3x"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-8 col-sm-4">
-              <div class="card h-100 card-question" id="SUV" onclick="selectCarSize(this.id)">
-                <div class="card" id="SUV" onclick="selectCarSize(this.id)">
-                  <div class="card-header">
-                    <h5 class="card-title">SUV</h5>
-                  </div>
-                  <div class="card-body py-5">
-                    <a href="#" class="btn stretched-link">
-                      <i class="fas fa-car fa-3x"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              </div>
-              </div>
-              <!-- Budget question -->
-              <div class="row mt-3 mt-md-5 car-size-question">
-                <div class="col-12">
-                  <h3 class="question-header text-center mb-3 mb-md-5">What is your budget?</h3>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card h-100 card-question" id="Under30" onclick="selectBudgetSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">Under $30,000</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card card-question" id="30To50" onclick="selectBudgetSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">$30,000 - $50,000</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card h-100 card-question" id="Over50" onclick="selectBudgetSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">Over $50,000</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- Mileage question -->
-              <div class="row mt-3 mt-md-5 car-size-question">
-                <div class="col-12">
-                  <h3 class="question-header text-center mb-3 mb-md-5">What is your average yearly mileage?</h3>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card h-100 card-question" id="10k" onclick="selectMileageSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">10,000 miles per year</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card card-question" id="15k" onclick="selectMileageSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">15,000 miles per year</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-8 col-sm-4">
-                  <div class="card h-100 card-question" id="20k" onclick="selectMileageSize(this.id)">
-                    <div class="card-header">
-                      <h5 class="card-title">20,000 miles per year</h5>
-                    </div>
-                    <div class="card-body py-5">
-                      <a href="#" class="btn stretched-link">
-                        <i class="fas fa-car fa-3x"></i>
-                      </a>
-                    </div>
-                    <div class="btn-row">
-                      <btn class="btn btn-primary btn-lg btn-block mt-5">Next</btn>
-                    </div>
-                  </div>
-                  </div>
-                  </div>
-                  <!-- Budget question -->
-                  <div class="row mt-3 mt-md-4 budget-question">
-                    <div class="col-12">
-                      <h4 class="question-header mb-3 mb-md-5">What is your budget?</h4>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card h-100" id="Under30" onclick="selectBudgetSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">Under $30,000</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card" id="30To50" onclick="selectBudgetSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">$30,000 - $50,000</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card h-100" id="Over50" onclick="selectBudgetSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">Over $50,000</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Mileage question -->
-                  <div class="row mt-3 mt-md-4 annual-mileage-question">
-                    <div class="col-12">
-                      <h4 class="question-header mb-3 mb-md-5">What is your average yearly mileage?</h4>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card h-100" id="10k" onclick="selectMileageSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">10,000 miles per year</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card" id="15k" onclick="selectMileageSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">15,000 miles per year</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-xs-8 col-sm-4">
-                      <div class="card h-100" id="20k" onclick="selectMileageSize(this.id)">
-                        <div class="card-header">
-                          <h5 class="card-title">20,000 miles per year</h5>
-                        </div>
-                        <div class="card-body py-5">
-                          <i class="fas fa-car fa-3x"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="additionFuelCaculationOptionsSection">
-                    <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#additionFuelCaculationOptions" aria-expanded="false"
-                      aria-controls="additionFuelCaculationOptions">
-                      Additional Options
-                    </button>
-                    <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#calculatorExplanation" aria-expanded="false"
-                      aria-controls="calculatorExplanation">
-                      How Are We Calculating this?
-                    </button>
-                    <div class="collapse my-3" id="calculatorExplanation">
-                      <div class="card card-body">
-                        <h4>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:
-                        </h4>
-                        <ul>
-                          <li> Gass Prices </li>
-                          <li> Household Electricity Cost per kWh</li>
-                          <li> Car MPG </li>
-                          <li> Car Mileage </li>
-                        </ul>
-                        <p class="mb-0">This calculator compares the cost of charging an electric car compared to
-                          fueling a
-                          Internal Combusting Engine</p>
-                        <p>These values will change if you add information into the Additional Options tab to enable you
-                          to have a
-                          more personalised savings calculation</p>
-                      </div>
-                    </div>
-                    <div class="collapse my-3" id="additionFuelCaculationOptions">
-                      <div class="card card-body">
-                        <h4>For a more accurate savings calulation, please input the data requested below</h4>
-                        <div class="row">
-                          <div class="col-12 col-md-6">
-                            <p>Please enter your <strong>Local Fuel Price</strong> per gallon in USD</p>
-                            <div class="input-group">
-                              <span class="input-group-text" id="basic-addon1">Fuel Price ($): </span>
-                              <input type="number" step=".01" id="customFuelPrice" class="form-control"
-                                placeholder="Fuel Price" aria-label="Fuel Price" aria-describedby="basic-addon1"
-                                pattern="^\d*(\.\d{0,2})?$">
-                            </div>
-                            <p id="mpgValidatorErrorMessage" class="mb-0 text-small text-danger">&nbsp</p>
-                            <p>If you are unsure about your current fuel prices, check <a
-                                href="https://gasprices.aaa.com/state-gas-price-averages/" target="_blank">the AAA
-                                website</a> for
-                              state by state average fuel prices</p>
-                            <hr>
-                            <div class="yearlyMileageInputContainer mt-3">
-                              <p>Please use the slider to select your <strong>Average Yearly Mileage</strong></p>
-                              <label for="mpgRange" class="form-label"><span class="fw-bold" id="mileageValue"></span>
-                                Miles A
-                                Year</label>
-                              <input type="range" min="10000" max="80000" step="5000" class="form-range"
-                                id="mileageRange">
-                              <button class="btn btn-primary mt-3" onclick="clearMileageSelection()">Clear Yearly
-                                Mileage
-                                Selection</button>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <hr>
-                            <div class="averageMPGInputContainer">
-                              <p>Please use the slider to select the <strong>Average MPG of your vehicle</strong></p>
-                              <label for="mpgRange" class="form-label"><span class="fw-bold" id="mpgValue"></span> Miles
-                                Per
-                                Gallon</label>
-                              <input type="range" min="5" max="95" class="form-range" id="mpgRange">
-                              <button class="btn btn-primary mt-3" onclick="clearMPGSelection()">Clear MPG
-                                Selection</button>
-                              <div id="additionFuelCaculationOptionsSection">
-                                <button class="btn btn-primary btn-lg btn-block mt-5" type="button"
-                                  data-bs-toggle="collapse" data-bs-target="#additionFuelCaculationOptions"
-                                  aria-expanded="false" aria-controls="additionFuelCaculationOptions">
-                                  Additional Options
-                                </button>
-                                <button class="btn btn-primary btn-lg btn-block mt-5" type="button"
-                                  data-bs-toggle="collapse" data-bs-target="#calculatorExplanation"
-                                  aria-expanded="false" aria-controls="calculatorExplanation">
-                                  How Are We Calculating this?
-                                </button>
-                                <div class="collapse my-3" id="calculatorExplanation">
-                                  <div class="card card-body">
-                                    <h4>To calculate these savings we are taking the average (as of 04/21/2022) across
-                                      the USA for:</h4>
-                                    <ul>
-                                      <li> Gass Prices </li>
-                                      <li> Household Electricity Cost per kWh</li>
-                                      <li> Car MPG </li>
-                                      <li> Car Mileage </li>
-                                    </ul>
-                                    <p class="mb-0">This calculator compares the cost of charging an electric car
-                                      compared to fueling a
-                                      Internal Combusting Engine</p>
-                                    <p>These values will change if you add information into the Additional Options tab
-                                      to enable you to have a
-                                      more personalised savings calculation</p>
-                                  </div>
-                                </div>
-                                <div class="collapse my-3" id="additionFuelCaculationOptions">
-                                  <div class="card card-body">
-                                    <h4>For a more accurate savings calulation, please input the data requested below
-                                    </h4>
-                                    <div class="row">
-                                      <div class="col-12 col-md-6">
-                                        <p>Please enter your <strong>Local Fuel Price</strong> per gallon in USD</p>
-                                        <div class="input-group">
-                                          <span class="input-group-text" id="basic-addon1">Fuel Price ($): </span>
-                                          <input type="number" step=".01" id="customFuelPrice" class="form-control"
-                                            placeholder="Fuel Price" aria-label="Fuel Price"
-                                            aria-describedby="basic-addon1" pattern="^\d*(\.\d{0,2})?$">
-                                        </div>
-                                        <p id="mpgValidatorErrorMessage" class="mb-0 text-small text-danger">&nbsp</p>
-                                        <p>If you are unsure about your current fuel prices, check <a
-                                            href="https://gasprices.aaa.com/state-gas-price-averages/"
-                                            target="_blank">the AAA website</a> for
-                                          state by state average fuel prices</p>
-                                        <hr>
-                                        <div class="yearlyMileageInputContainer mt-3">
-                                          <p>Please use the slider to select your <strong>Average Yearly
-                                              Mileage</strong></p>
-                                          <label for="mpgRange" class="form-label"><span class="fw-bold"
-                                              id="mileageValue"></span> Miles A
-                                            Year</label>
-                                          <input type="range" min="10000" max="80000" step="5000" class="form-range"
-                                            id="mileageRange">
-                                          <button class="btn btn-primary mt-3" onclick="clearMileageSelection()">Clear
-                                            Yearly Mileage
-                                            Selection</button>
-                                        </div>
-                                      </div>
-                                      <div class="col-12 col-md-6">
-                                        <hr>
-                                        <div class="averageMPGInputContainer">
-                                          <p>Please use the slider to select the <strong>Average MPG of your
-                                              vehicle</strong></p>
-                                          <label for="mpgRange" class="form-label"><span class="fw-bold"
-                                              id="mpgValue"></span> Miles Per
-                                            Gallon</label>
-                                          <input type="range" min="5" max="95" class="form-range" id="mpgRange">
-                                          <button class="btn btn-primary mt-3" onclick="clearMPGSelection()">Clear MPG
-                                            Selection</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <button class="btn btn-primary btn-lg btn-block mt-5"
-                            onclick="calculateFuelSavings()">Calculate</button>
-                          <div id="result-display"></div>
-                          <button class="btn btn-primary btn-lg btn-block mt-5"
-                            onclick="searchButtonClick()">Search</button>
-                        </div>
-                        </div>
-                        </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-lg btn-block mt-5" onclick="calculateFuelSavings()">Calculate</button>
+      <div id="result-display"></div>
   </section>
-  <section id="result-display" class="container-fluid px-5"></section>
-  <!--footer-->
-  <div id="footer-container" class="container-fluid g-0"></div>
+  </main>
+
   <!-- Local Script Links -->
   <script src="assets/js/create-nav-and-footer.js"></script>
   <script src="assets/js/fuel-saving-calculator.js"></script>
   <script src="assets/js/script.js"></script>
+
   <!--Bootstrap JS Bundle-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
@@ -419,7 +233,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
+
   <script src="assets/js/fuel-saving-calculator.js"></script>
+
 </body>
 
 </html>
