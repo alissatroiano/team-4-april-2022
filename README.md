@@ -167,6 +167,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
     Calculator to verify the mi/kWh
 
 ### **Content**
+- [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
 
 ### **Media**
 - [EvSpecifications](https://www.evspecifications.com/) 
