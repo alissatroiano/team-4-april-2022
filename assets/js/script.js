@@ -1,4 +1,4 @@
-
+// Add border to selected option
 function selectedCardCSS (value) {
     // find the selected element
     selection = document.getElementById(value)
@@ -18,9 +18,9 @@ function selectedCardCSS (value) {
 
 
 
-//Car size question
+// Car size question
 let carSize = ""  // define variables to store data
-// function for car type question - make one for each question
+
 function selectCarSize(value) {
     let carSize = value
     console.log(carSize)
@@ -28,9 +28,9 @@ function selectCarSize(value) {
 } 
 
 
-//Budget question
+// Budget question
 let budgetSize = ""  // define variables to store data
-// function for car type question - make one for each question
+
 function selectBudgetSize(value) {
     let budgetSize = value
     console.log(budgetSize)
@@ -38,9 +38,9 @@ function selectBudgetSize(value) {
 } 
 
 
-//Mileage question
+// Mileage question
 let mileageSize = ""  // define variables to store data
-// function for car type question - make one for each question
+
 function selectMileageSize(value) {
     let mileageSize = value
     console.log(mileageSize)
