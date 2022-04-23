@@ -46,7 +46,3 @@ function selectMileageSize(value) {
     console.log(mileageSize)
     selectedCardCSS(value)
 } 
-
-
-
-
