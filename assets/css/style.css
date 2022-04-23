@@ -5,12 +5,16 @@
 :root {
     --bg-gray-1: #fafafa;
     --bg-gray-2: #f0f0f0;
+    --bg-blue-dark: #1a1a1a;
+    --bg-blue-light: #95befd;
     --p-blue-1: #303854;
-    --p-yellow: #E8A413;
-    --p-blue-3: #0d1018;
+    --p-blue-2: #0957a2;
+    --p-green: #529651;
+    --s-yellow: #E8A413;
     --s-blue: #79C1CC;
     --s-green-1: #9df19c;
-    --s-green-2: #b6f5b5;
+    --t-blue: #0d1018;
+    --t-green: #b6f5b5;
 }
 
 * {
@@ -40,21 +44,21 @@ h6 {
 }
 
 .btn.btn-main {
-    background-color: #9df19c;
+    background-color: var(--p-blue-2);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: var(--p-blue-1);
+    color: var(--bg-gray-1);
     margin-left: 10px;
 }
 
 .btn.btn-main:hover {
-    background-color: #b6f5b5;
+    background-color: var(--bg-blue-light);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: var(--p-blue-1);
     margin-left: 10px;
 }
 
 .btn.btn-blue {
-    background-color: #79c1cc;
+    background-color: var(--p-green);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: var(--p-blue-1);
     margin-left: 10px;
@@ -144,11 +148,6 @@ p.lead {
     font-size: 1.4rem;
     border: none;
     margin: 10px 0;
-}
-
-.btn.btn-main.btn-lg:hover,
-.btn.btn-main.btn-lg.cta-button:hover {
-    background-color: #b6f5b5;
 }
 
 /* Footer */
