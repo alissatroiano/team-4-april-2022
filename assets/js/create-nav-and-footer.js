@@ -34,9 +34,11 @@ function createNavbar () {
 function createFooter () {
     container = document.getElementById("footer-container")
     container.innerHTML = `
-    <footer class="flex-wrap d-none d-md-flex fixed-bottom justify-content-between align-items-center py-3 border-0 shadow-lg">
-      <div class="col-xs-8 col-sm-4 d-flex align-items-center">
-        <span class="text-muted footer-text ms-3 ms-md-5">©2022 Electrillo </span>
+    <footer class="flex-wrap d-none d-md-flex fixed-bottom justify-content-center align-items-center py-3 border-0 shadow-lg my-0 mx-auto">
+    <div class="col-xs-8 col-sm-4 d-flex align-items-center">
+    <h6 class="text-dark footer-brand ms-3 ms-md-5"><i class="fas fa-bolt"></i> Electrillo
+    <span class="text-muted">&copy; 2022</span>
+    </h6>
       </div>
       <div class="col-xs-8 col-sm-4 justify-content-center d-flex">
         <ul class="list-group list-unstyled list-group-horizontal-md" id="footer-links">
@@ -48,9 +50,10 @@ function createFooter () {
       </div>
       <div class="col-xs-8 col-sm-4 justify-content-center d-flex">
         <ul class="nav list-unstyled ms-auto">
-          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://www.earthday.org/"><i class="fas fa-globe-africa"></i></a></li>
-          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://github.com/alissatroiano/team-4-april-2022"><i class="fab fa-github"></i></a></li>
+          <li class="mx-2 mx-lg-3"><a class="link-secondary" href="https://www.earthday.org/" target="_blank"><i class="fas fa-globe-africa"></i></a></li>
+          <li class="mx-2 mx-lg-3"><a class="link-secondary" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li class="mx-2 mx-lg-3"><a class="link-secondary" href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li class="mx-2 mx-lg-3"><a class="link-secondary" href="https://github.com/alissatroiano/team-4-april-2022" target="_blank"><i class="fab fa-github"></i></a></li>
           </ul>
       </div>
     </footer>
