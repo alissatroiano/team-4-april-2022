@@ -34,23 +34,24 @@ function createNavbar () {
 function createFooter () {
     container = document.getElementById("footer-container")
     container.innerHTML = `
-    <footer class="flex-wrap d-none d-md-flex fixed-bottom justify-content-between align-items-center py-3 border-top">
-      <div class="col-4 d-flex align-items-center">
+    <footer class="flex-wrap d-none d-md-flex fixed-bottom justify-content-between align-items-center py-3 border-0 shadow-lg">
+      <div class="col-xs-8 col-sm-4 d-flex align-items-center">
         <span class="text-muted footer-text ms-3 ms-md-5">©2022 Electrillo </span>
       </div>
-      <div class="col-4 justify-content-center d-flex">
+      <div class="col-xs-8 col-sm-4 justify-content-center d-flex">
         <ul class="list-group list-unstyled list-group-horizontal-md" id="footer-links">
           <li class="ms-3 p-1"><a class="link-secondary" href="index.html">Home</a></li>
-          <li class="ms-3 p-1"><a class="link-secondary" href="index.html#mission">Our Mission</a></li>
-          <li class="ms-3 p-1"><a class="link-secondary" href="team.html">Our Team</a></li>
-          <li class="ms-3" id="footer-cta"><a class="footer-link link-light" href="questions.html">Start Here</a></li>
+          <li class="ms-3 p-1"><a class="link-secondary" href="index.html#mission">Mission</a></li>
+          <li class="ms-3 p-1"><a class="link-secondary" href="team.html">Team</a></li>
+          <li class="ms-3 p-1" id="footer-cta"><a class="footer-link link-light" href="questions.html">EValutor</a></li>
         </ul>
       </div>
-      <div class="col-4 justify-content-center d-flex">
-        <ul class="nav list-unstyled">
-          <li class="mx-3"><a class="link-secondary" href="https://www.earthday.org/"><i class="fas fa-globe-africa"></i></a></li>
-          <li class="mx-3"><a class="link-secondary" href="https://github.com/alissatroiano/team-4-april-2022"><i class="fab fa-github"></i></a></li>
-        </ul>
+      <div class="col-xs-8 col-sm-4 justify-content-center d-flex">
+        <ul class="nav list-unstyled ms-auto">
+          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://www.earthday.org/"><i class="fas fa-globe-africa"></i></a></li>
+          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+          <li class="mx-3 mx-lg-4"><a class="link-secondary" href="https://github.com/alissatroiano/team-4-april-2022"><i class="fab fa-github"></i></a></li>
+          </ul>
       </div>
     </footer>
     `

@@ -8,7 +8,6 @@
 - [Electrillo](#electrillo)
   - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
-  - 
 - [STRATEGY](#strategy)
   - [User Stories](#user-stories)
   - [Scope](#scope)
