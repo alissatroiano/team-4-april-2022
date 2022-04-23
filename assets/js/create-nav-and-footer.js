@@ -1,7 +1,7 @@
 function createNavbar () {
     container = document.getElementById("navbar-container")
     container.innerHTML = `
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top shadow-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
         <i class="fas fa-bolt"></i>
