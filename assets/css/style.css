@@ -122,3 +122,11 @@ a.footer-link {
     padding: 5px 10px;
 
 }
+
+
+/* QUESTIONS */
+
+/*selected question border*/
+.card-selected {
+    box-shadow: 0 0 5px 5px #79c1cc;
+}
