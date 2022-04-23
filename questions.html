@@ -78,6 +78,64 @@
             <div class="btn-row">
                 <btn class="btn btn-primary btn-lg btn-block mt-5">Next</btn>
             </div>
+
+            <div id="additionFuelCaculationOptionsSection">
+              <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#additionFuelCaculationOptions" aria-expanded="false" aria-controls="additionFuelCaculationOptions">
+                Additional Options
+              </button>
+              <button class="btn btn-primary btn-lg btn-block mt-5" type="button" data-bs-toggle="collapse" data-bs-target="#calculatorExplanation" aria-expanded="false" aria-controls="calculatorExplanation">
+                How Are We Calculating this?
+              </button>
+              <div class="collapse my-3" id="calculatorExplanation">
+                <div class="card card-body">
+                  <h4>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h4>
+                  <ul>
+                    <li> Gass Prices </li>
+                    <li> Household Electricity Cost per kWh</li>
+                    <li> Car MPG </li>
+                    <li> Car Mileage </li>
+                  </ul>
+                  <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a Internal Combusting Engine</p>
+                  <p>These values will change if you add information into the Additional Options tab to enable you to have a more personalised savings calculation</p>
+                </div>
+              </div>
+              <div class="collapse my-3" id="additionFuelCaculationOptions">
+                <div class="card card-body">
+                  <h4>For a more accurate savings calulation, please input the data requested below</h4>
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <p>Please enter your <strong>Local Fuel Price</strong> per gallon in USD</p>
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">Fuel Price ($): </span>
+                        <input type="number" step=".01" id="customFuelPrice" class="form-control" placeholder="Fuel Price" aria-label="Fuel Price" aria-describedby="basic-addon1" pattern="^\d*(\.\d{0,2})?$" >
+                      </div>
+                      <p id="mpgValidatorErrorMessage" class="mb-0 text-small text-danger">&nbsp</p>
+                      <p>If you are unsure about your current fuel prices, check <a href="https://gasprices.aaa.com/state-gas-price-averages/" target="_blank">the AAA website</a> for state by state average fuel prices</p>
+                      <hr>
+                      <div class="yearlyMileageInputContainer mt-3">
+                        <p>Please use the slider to select your <strong>Average Yearly Mileage</strong></p>
+                        <label for="mpgRange" class="form-label"><span class="fw-bold" id="mileageValue"></span> Miles A Year</label>
+                        <input type="range" min="10000" max="80000" step="5000" class="form-range" id="mileageRange">
+                        <button class="btn btn-primary mt-3" onclick="clearMileageSelection()">Clear Yearly Mileage Selection</button>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <hr>
+                      <div class="averageMPGInputContainer">
+                        <p>Please use the slider to select the <strong>Average MPG of your vehicle</strong></p>
+                        <label for="mpgRange" class="form-label"><span class="fw-bold" id="mpgValue"></span> Miles Per Gallon</label>
+                        <input type="range" min="5" max="95" class="form-range" id="mpgRange">
+                        <button class="btn btn-primary mt-3" onclick="clearMPGSelection()">Clear MPG Selection</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="btn btn-primary btn-lg btn-block mt-5" onclick="calculateFuelSavings()">Calculate</button>
+            <div id="result-display"></div>
+
         </div>
     </section>
     </main>
