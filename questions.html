@@ -60,8 +60,7 @@
                   <label for="mpgRange" class="form-label"><span class="fw-bold" id="mileageValue"></span> Miles A
                     Year</label>
                   <input type="range" min="10000" max="80000" step="5000" class="form-range" id="mileageRange">
-                  <button class="btn btn-primary mt-3" onclick="clearMileageSelection()">Clear Yearly Mileage
-                    Selection</button>
+                  <button class="btn-none mt-3" onclick="clearMileageSelection()">Clear Mileage</button>
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -71,7 +70,7 @@
                   <label for="mpgRange" class="form-label"><span class="fw-bold" id="mpgValue"></span> Miles Per
                     Gallon</label>
                   <input type="range" min="5" max="95" class="form-range" id="mpgRange">
-                  <button class="btn btn-primary mt-3" onclick="clearMPGSelection()">Clear MPG Selection</button>
+                  <button class="btn-none mt-3" onclick="clearMPGSelection()">Clear MPG</button>
                 </div>
               </div>
             </div>
@@ -89,7 +88,6 @@
             Our Process
           </button>
         </div>
-     
       </div>
     </section>
   </main>
@@ -100,38 +98,39 @@
 
   <!--modal for calculator explanation-->
   <!-- Modal -->
-<div class="modal fade" id="calculatorExplanation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">How We Got These Numbers</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  <div class="modal fade" id="calculatorExplanation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">How We Got These Numbers</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
         </div>
-        
-      <div class="modal-body">
-        <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a
-          Internal Combusting Engine</p>
-        <p>These values will change if you add information into the Additional Options tab to enable you to have a
-          more personalised savings calculation</p>      
+
+        <div class="modal-body">
+          <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a
+            Internal Combusting Engine</p>
+          <p>These values will change if you add information into the Additional Options tab to enable you to have a
+            more personalised savings calculation</p>
         </div>
-      <div class="modal-footer">
-        <div class="row">
-        <h6>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h6>
-        <ul class="list-group list-unstyled">
-          <li> Gass Prices </li>
-          <li> Household Electricity Cost per kWh</li>
-          <li> Car MPG </li>
-          <li> Car Mileage </li>
-        </ul>
+        <div class="modal-footer">
+          <div class="row">
+            <h6>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h6>
+            <ul class="list-group list-unstyled">
+              <li> Gass Prices </li>
+              <li> Household Electricity Cost per kWh</li>
+              <li> Car MPG </li>
+              <li> Car Mileage </li>
+            </ul>
+          </div>
+          <div class="row">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
         </div>
-        <div class="row">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
       </div>
     </div>
-</div>
-</div>
+  </div>
 
   <!-- Local Script Links -->
   <script src="assets/js/create-nav-and-footer.js"></script>
