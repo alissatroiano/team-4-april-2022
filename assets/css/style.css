@@ -53,7 +53,6 @@ main {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    overflow: scroll;
   }
 
 .font-dark {
@@ -117,7 +116,11 @@ main {
 
 /* Landing Page */
 .landing-page {
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 img {
@@ -129,7 +132,7 @@ img {
 .jumbotron {
     max-width: 100%;
     min-height: 100%;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .mission-container {
@@ -236,25 +239,14 @@ a.link-secondary:hover {
 #footer-copyright{
     font-family: 'futura-pt', sans-serif;
 }
-
-@media only screen and (min-width: 600px) {
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
     .jumbotron {
         max-width: 100%;
-        height: auto;
-        margin-top: 30px;
+        min-height: 100vh;
         margin: 0 auto;
     }
-
-    h1.display-4 {
-        font-size: 2.67rem;
-        font-weight: 410;
-        color: var(--p-blue-1);
-        margin: 0 15px;
-    }
-}
-/* QUESTIONS */
-
-/*selected question border*/
-.card-selected {
-    box-shadow: 0 0 5px 5px #79c1cc;
 }
