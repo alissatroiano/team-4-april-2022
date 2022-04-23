@@ -55,8 +55,8 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 ## Topology
 
 ## Database Schema
-The Database has been created with [MongoDB](https://www.mongodb.com/) and exported as Json file:
-![database](https://github.com/alissatroiano/team-4-april-2022/tree/main/docs/readme_img/firstDBschema.png?raw=true)
+The Database has been created with [MongoDB](https://www.mongodb.com/) and exported as Json file: <br>
+![database](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/firstDBschema.png?raw=true)
 
 ## **SKELETON**
 
