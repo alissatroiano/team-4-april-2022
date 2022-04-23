@@ -31,6 +31,7 @@ function validateMPGInput(value) {
     return /^\d{0,3}(\.\d{0,2})?$/.test(value);
 }
 
+// MPG Validation
 document.getElementById("customFuelPrice").oninput = function()  {
     // To be used when data is submitted
     value = this.value
@@ -44,7 +45,7 @@ document.getElementById("customFuelPrice").oninput = function()  {
     }
 }
 
-// Fuel Savings Calculation
+// Fuel Savings Display Message
 
 function displayCalculationResults(savingAmount) {
     document.getElementById("result-display").innerHTML = `
@@ -59,6 +60,8 @@ function displayCalculationResults(savingAmount) {
     </div>
     `;
 }
+
+// Fuel Savings Calculator
 
 function calculateFuelSavings(fuelPrice=4.23) {
     // Per Gallon in dollars
@@ -78,7 +81,6 @@ function calculateFuelSavings(fuelPrice=4.23) {
         vehicleMPG = 36
     } 
 
-    
     // Per kWh in cents
     const electricityPrice = 13.72;
     // mile per kWh, Changes dependant on the car displayed?
