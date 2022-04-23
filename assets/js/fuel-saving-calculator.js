@@ -102,26 +102,3 @@ function calculateFuelSavings(fuelPrice=4.23) {
     }
 }
 
-function selectedCardCSS (value) {
-    // find the selected element
-    selection = document.getElementById(value)
-    // find the parent element containing all the options
-    let container = selection.parentElement.parentElement
-    // select the cards of the options
-    options = container.getElementsByClassName("card")
-    // update css
-    for (let i = 0; i < options.length; i++){
-        if (options[i].id == value) {
-            selection.classList.add("card-selected")
-        } else { 
-            options[i].classList.remove("card-selected")
-        }
-    }
-}
-
-// function for car type question
-function selectCarSize(value) {
-    let carSize = value
-    console.log(carSize)
-    selectedCardCSS(value)
-}
