@@ -3,7 +3,9 @@ function createNavbar () {
     container.innerHTML = `
     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Electrillo</a>
+        <a class="navbar-brand" href="index.html">
+        <i class="fas fa-bolt"></i>
+        Electrillo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -32,7 +34,7 @@ function createNavbar () {
 function createFooter () {
     container = document.getElementById("footer-container")
     container.innerHTML = `
-    <footer class="flex-wrap fixed-bottom d-none d-md-flex justify-content-between align-items-center py-3 border-top">
+    <footer class="flex-wrap d-none d-md-flex justify-content-between align-items-center py-3 border-top">
       <div class="col-4 d-flex align-items-center">
         <span class="text-muted footer-text ms-3 ms-md-5">©2022 Electrillo </span>
       </div>
