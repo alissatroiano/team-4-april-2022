@@ -99,20 +99,6 @@ p {
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
-/* #cta-nav {
-    background-color: #79c1cc;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    color: var(--p-blue-1);
-    margin-left: 10px;
-}
-
-#cta-nav:hover {
-    background-color: #79c1cca8;
-    color: var(--p-blue-1);
-} */
-
-
-/* Landing Page */
 .landing-page {
     overflow: hidden;
 }
@@ -135,10 +121,6 @@ img {
     height: 100vh;
     min-height: 100%;
     margin-top: 50px;
-}
-
-p.mission-statement {
-    margin: 20px 30px;
 }
 
 #down {
@@ -182,24 +164,63 @@ p.lead {
     margin: 10px 0;
 }
 
-/* Quiz Page */
+/* Landing Page --> #mission */
+.fa-charging-station, 
+.fa-handshake, 
+.fa-globe-americas {
+    color: #79c1cc;
+    /* text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.411); */
+    /* text-shadow: 4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15); */
+    /* text-shadow: 0px 3px 0px #b2a98f,
+    0px 14px 10px rgba(0,0,0,0.15),
+    0px 24px 2px rgba(0,0,0,0.1),
+    0px 34px 30px rgba(0,0,0,0.1); */
+    /* Text shadow effect copied from http://127.0.0.1:5500/index.html#mission */
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 
+.question-header {
+    text-transform: uppercase;
+}
+
+h5.card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.fa-charging-station:hover, 
+.fa-handshake:hover, 
+.fa-globe-americas:hover {
+    color: #4b5887;
+} 
+
+p.mission-statement {
+    margin: 20px 30px;
+}
+
+/* Quiz Page */
 #sizeCompact:hover, #sizeMed:hover, #sizeSUV:hover {
     background-color: var(--bg-gray-1);
     box-shadow: 0px 0px 10px #cddbc2;
 }
 
+/*selected question border*/
+.card-selected,
+.card-selected:hover {
+    box-shadow: 0 0 5px 5px #79c1cc;
+}
 
 /* Footer */
 footer {
     font-family: 'Oswald', sans-serif;
-    background-color: #cddbc2;
+    background-color: #fafafa;
     letter-spacing: 0.5px;
+    font-size: 1.2rem;
 }
 
 .footer-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
     color: var(--p-blue-3);
     text-transform: uppercase;
 }
@@ -239,7 +260,7 @@ a.link-secondary:hover {
         max-width: 100%;
         height: 100vh;
         min-height: 100%;
-        margin-top: 8rem;
+        margin-top: 3.5rem;
     }
 
     h1.display-4 {
@@ -250,10 +271,3 @@ a.link-secondary:hover {
     }
 }
 
-
-/* QUESTIONS */
-
-/*selected question border*/
-.card-selected {
-    box-shadow: 0 0 5px 5px #79c1cc;
-}

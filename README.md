@@ -1,8 +1,19 @@
-# **WEBSITE NAME TBC**
+# **Electrillo**
 
 ![Live Project Representation Image]()
 
 [Link to Live Project]()
+
+## Table of Contents
+- [Electrillo](#electrillo)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - 
+- [STRATEGY](#strategy)
+  - [User Stories](#user-stories)
+  - [Scope](#scope)
+- [Testing](TESTING.md)
+
 
 ## Introduction
 
@@ -77,15 +88,11 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 
 ## **FEATURES**
 
-
 ### **CRUD Table**
 
 ### **Defensive Programming**
 
 ### **Features for Future Releases**
-
-
-## **TESTING**
 
 ## **BUGS AND ISSUES**
 
@@ -167,6 +174,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
     Calculator to verify the mi/kWh
 
 ### **Content**
+- [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
 
 ### **Media**
 - [EvSpecifications](https://www.evspecifications.com/) 
