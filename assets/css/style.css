@@ -4,14 +4,14 @@
 
 :root {
     --bg-gray-1: #fafafa;
-    --bg-gray-2: #f0f0f0; 
+    --bg-gray-2: #f0f0f0;
     --p-blue-1: #303854;
     --p-yellow: #E8A413;
     --p-blue-3: #0d1018;
     --s-blue: #79C1CC;
     --s-green-1: #9df19c;
     --s-green-2: #b6f5b5;
-  }
+}
 
 * {
     box-sizing: border-box;
@@ -28,7 +28,12 @@ main {
     color: var(--p-blue-1);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     color: var(--p-blue-1);
@@ -108,7 +113,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #79c1cc;
 }
 
-.mission-statement {
+#hero-text {
+    margin-top: 40px;
 }
 
 h1.display-4 {
@@ -119,7 +125,7 @@ h1.display-4 {
     font-size: 2.3rem;
     font-weight: 410;
     color: var(--p-blue-1);
-    margin: 0 15px;
+    margin: 5px 15px;
 
 }
 
@@ -175,14 +181,14 @@ a.footer-link {
         max-width: 100%;
         height: 100vh;
         min-height: 100%;
-        margin-top: 70px;
+        margin-top: 30px;
     }
+
     h1.display-4 {
         font-size: 2.67rem;
         font-weight: 410;
         color: var(--p-blue-1);
-        margin: 10px 15px;
-    
+        margin: 0 15px;
     }
-    
+
 }
