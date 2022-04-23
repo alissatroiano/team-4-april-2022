@@ -184,22 +184,36 @@ p.lead {
 
 /* Quiz Page */
 
-#sizeCompact:hover, #sizeMed:hover, #sizeSUV:hover {
+.question-header {
+    text-transform: uppercase;
+}
+
+h5.card-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-question:hover {
     background-color: var(--bg-gray-1);
     box-shadow: 0px 0px 10px #cddbc2;
 }
 
+/*selected question border*/
+.card-selected,
+.card-selected:hover {
+    box-shadow: 0 0 5px 5px #79c1cc;
+}
 
 /* Footer */
 footer {
     font-family: 'Oswald', sans-serif;
-    background-color: #cddbc2;
+    background-color: #fafafa;
     letter-spacing: 0.5px;
+    font-size: 1.2rem;
 }
 
 .footer-text {
     font-family: 'Oswald', sans-serif;
-    font-size: 1rem;
     color: var(--p-blue-3);
     text-transform: uppercase;
 }
@@ -250,10 +264,3 @@ a.link-secondary:hover {
     }
 }
 
-
-/* QUESTIONS */
-
-/*selected question border*/
-.card-selected {
-    box-shadow: 0 0 5px 5px #79c1cc;
-}

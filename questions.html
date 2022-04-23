@@ -37,116 +37,133 @@
           <p class="lead">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
             protecting the planet.
           </p>
-          <hr>
         </div>
       </div>
+      <hr>
       <!-- Use JavaScript to manipulate HTML in the placement section code below -->
       <div class="row mt-3 mt-md-4 car-size-question">
         <div class="col-12 mt-4">
           <h3 class="question-header text-center mb-3 mb-md-5">Which size of car would you like?</h3>
         </div>
         <div class="col-xs-8 col-sm-4">
-          <div class="card h-100" id="Compact" onclick="selectCarSize(this.id)">
+          <div class="card h-100 card-question" id="Compact" onclick="selectCarSize(this.id)">
             <div class="card-header">
-              <h5 class="card-title text-center"> Compact </h5>
+              <h5 class="card-title"> Compact </h5>
             </div>
-            <div class="card-body py-5">
+            <div class="card-body py-5">                       
+              <img src="" class="img-fluid" />
               <i class="fas fa-car fa-3x text-center"></i>
+              <a href="#" class="btn stretched-link">
+                <p class="card-text"></p>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-xs-8 col-sm-4">
-          <div class="card" id="Med" onclick="selectCarSize(this.id)">
+          <div class="card card-question" id="Med" onclick="selectCarSize(this.id)">
             <div class="card-header">
-              <h5 class="card-title text-center">Mid-Size</h5>
+              <h5 class="card-title">Mid-Size</h5>
             </div>
             <div class="card-body py-5">
-              <i class="fas fa-car fa-3x"></i>
+              <a href="#" class="btn stretched-link">
+                <i class="fas fa-car fa-3x"></i>
+              </a>
             </div>
           </div>
         </div>
         <div class="col-xs-8 col-sm-4">
-          <div class="card h-100" id="SUV" onclick="selectCarSize(this.id)">
+          <div class="card h-100 card-question" id="SUV" onclick="selectCarSize(this.id)">
             <div class="card-header">
               <h5 class="card-title">SUV</h5>
             </div>
             <div class="card-body py-5">
-              <i class="fas fa-car fa-3x"></i>
+              <a href="#" class="btn stretched-link">
+                <i class="fas fa-car fa-3x"></i>
+              </a>
             </div>
           </div>
         </div>
-      <div class="btn-row">
-        <btn class="btn btn-primary btn-lg btn-block mt-5">Next</btn>
-      </div>
 
         <!-- Budget question -->
-        <div class="row mt-3 mt-md-4 car-size-question">
+        <div class="row mt-3 mt-md-5 car-size-question">
           <div class="col-12">
-            <h4 class="question-header mb-3 mb-md-5">What is your budget?</h4>
+            <h3 class="question-header text-center mb-3 mb-md-5">What is your budget?</h3>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card h-100" id="Under30" onclick="selectBudgetSize(this.id)">
+            <div class="card h-100 card-question" id="Under30" onclick="selectBudgetSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">Under $30,000</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card" id="30To50" onclick="selectBudgetSize(this.id)">
+            <div class="card card-question" id="30To50" onclick="selectBudgetSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">$30,000 - $50,000</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card h-100" id="Over50" onclick="selectBudgetSize(this.id)">
+            <div class="card h-100 card-question" id="Over50" onclick="selectBudgetSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">Over $50,000</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
         </div>
         <!-- Mileage question -->
-        <div class="row mt-3 mt-md-4 car-size-question">
+        <div class="row mt-3 mt-md-5 car-size-question">
           <div class="col-12">
-            <h4 class="question-header mb-3 mb-md-5">What is your average yearly mileage?</h4>
+            <h3 class="question-header text-center mb-3 mb-md-5">What is your average yearly mileage?</h3>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card h-100" id="10k" onclick="selectMileageSize(this.id)">
+            <div class="card h-100 card-question" id="10k" onclick="selectMileageSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">10,000 miles per year</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card" id="15k" onclick="selectMileageSize(this.id)">
+            <div class="card card-question" id="15k" onclick="selectMileageSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">15,000 miles per year</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-xs-8 col-sm-4">
-            <div class="card h-100" id="20k" onclick="selectMileageSize(this.id)">
+            <div class="card h-100 card-question" id="20k" onclick="selectMileageSize(this.id)">
               <div class="card-header">
                 <h5 class="card-title">20,000 miles per year</h5>
               </div>
               <div class="card-body py-5">
-                <i class="fas fa-car fa-3x"></i>
+                <a href="#" class="btn stretched-link">
+                  <i class="fas fa-car fa-3x"></i>
+                </a>
               </div>
             </div>
           </div>
