@@ -25,7 +25,6 @@ function selectCarSize(value) {
     selectedCardCSS(value);
 }
 
-
 // Budget question
 let budgetSize = "";  // define variables to store data
 
@@ -35,7 +34,6 @@ function selectBudgetSize(value) {
     selectedCardCSS(value);
 } 
 
-
 // Mileage question
 let mileageSize = "";  // define variables to store data
 
@@ -44,3 +42,10 @@ function selectMileageSize(value) {
     console.log(mileageSize);
     selectedCardCSS(value);
 } 
+
+// Search Button Click Function
+
+function searchButtonClick () {
+    // add car search function here
+    calculateFuelSavings();
+}

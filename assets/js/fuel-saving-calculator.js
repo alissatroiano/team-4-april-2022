@@ -7,7 +7,7 @@ mpgSliderValue.innerHTML = "Unselected"; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 mpgSlider.oninput = function() {
     mpgSliderValue.innerHTML = this.value;
-}
+};
 
 var mileageSlider = document.getElementById("mileageRange");
 var mileageSliderValue = document.getElementById("mileageValue");
@@ -15,36 +15,37 @@ mileageSliderValue.innerHTML = "Unselected"; // Display the default slider value
 // Update the current slider value (each time you drag the slider handle)
 mileageSlider.oninput = function() {
     mileageSliderValue.innerHTML = this.value;
-}
+};
 
 function clearMPGSelection() {
     mpgSliderValue.innerHTML = "Unselected"; // Reset MPG selection
-    mpgSlider.value = 50
+    mpgSlider.value = 50;
 }
 
 function clearMileageSelection() {
     mileageSliderValue.innerHTML = "Unselected"; // Reset Mileage selection
-    mileageSlider.value = 45000
+    mileageSlider.value = 45000;
 }
 
 function validateMPGInput(value) {
     return /^\d{0,3}(\.\d{0,2})?$/.test(value);
 }
 
+// MPG Validation
 document.getElementById("customFuelPrice").oninput = function()  {
     // To be used when data is submitted
-    value = this.value
-    errorDisplay = document.getElementById("mpgValidatorErrorMessage")
+    value = this.value;
+    errorDisplay = document.getElementById("mpgValidatorErrorMessage");
     if (validateMPGInput(value) == false){
-        this.style.color = "red"
-        errorDisplay.innerHTML = "Please enter a a price with a max of 4 numbers and 2 decimal places"
+        this.style.color = "red";
+        errorDisplay.innerHTML = "Please enter a a price with a max of 4 numbers and 2 decimal places";
     } else {
-        this.style.color = "initial"
-        errorDisplay.innerHTML = "&nbsp"
+        this.style.color = "initial";
+        errorDisplay.innerHTML = "&nbsp";
     }
-}
+};
 
-// Fuel Savings Calculation
+// Fuel Savings Display Message
 
 function displayCalculationResults(savingAmount) {
     document.getElementById("result-display").innerHTML = `
@@ -60,25 +61,26 @@ function displayCalculationResults(savingAmount) {
     `;
 }
 
+// Fuel Savings Calculator
+
 function calculateFuelSavings(fuelPrice=4.23) {
     // Per Gallon in dollars
     // Check if custom fuel price is supplied
     if (customFuelPrice.value) {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
-            console.log(customFuelPrice.value)
-            fuelPrice = customFuelPrice.value
+            console.log(customFuelPrice.value);
+            fuelPrice = customFuelPrice.value;
         } else {
             alert("Please enter a valid input for Fuel Price");
         }
     }
     // Check if custom vehicle MPG is supplied
     let vehicleMPG = document.getElementById("mpgValue").innerHTML;
-    console.log(vehicleMPG)
+    console.log(vehicleMPG);
     if (vehicleMPG == "Unselected") {
-        vehicleMPG = 36
+        vehicleMPG = 36;
     } 
 
-    
     // Per kWh in cents
     const electricityPrice = 13.72;
     // mile per kWh, Changes dependant on the car displayed?
@@ -87,7 +89,7 @@ function calculateFuelSavings(fuelPrice=4.23) {
     // Store variables from page
     let mileage = document.getElementById("mileageValue").innerHTML;
     if (mileage == "Unselected") {
-        mileage = 30000
+        mileage = 30000;
     } 
 
     const vehicleType =  document.getElementById("vehicle-type");
