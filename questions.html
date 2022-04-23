@@ -30,8 +30,7 @@
 
   <!--section for questions-->
   <main>
-    <section class="questions" id="question-section">
-      <div class="container">
+    <section class="questions container" id="question-section">
         <div class="row">
           <div class="col-12">
             <h1 class="text-center my-3">EValuator</h1>
@@ -79,13 +78,34 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12">
-            <button class="btn btn-main btn-lg mt-5" onclick="calculateFuelSavings()">Calculate</button>
-            <div id="result-display"></div>
+        <div class="row d-block d-md-flex align-items-center justify-content-center">
+          <div class="col-12 col-md-6 text-center text-lg-start">
+            <button class="btn btn-main btn-lg btn-block mt-5" onclick="calculateFuelSavings()">Calculate</button>
+            <div class="mt-3" id="result-display"></div>
           </div>
+          <div class="col-12 col-md-6 text-center text-lg-end mb-3">
+        <button class="btn btn-info btn-lg mt-5" type="button" data-bs-toggle="collapse"
+        data-bs-target="#calculatorExplanation" aria-expanded="false" aria-controls="calculatorExplanation">
+        How Are We Calculating this?
+      </button>
+      </div>
+  
+      <div class="collapse my-3" id="calculatorExplanation">
+        <div class="card card-body">
+          <h4>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h4>
+          <ul>
+            <li> Gass Prices </li>
+            <li> Household Electricity Cost per kWh</li>
+            <li> Car MPG </li>
+            <li> Car Mileage </li>
+          </ul>
+          <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a
+            Internal Combusting Engine</p>
+          <p>These values will change if you add information into the Additional Options tab to enable you to have a
+            more personalised savings calculation</p>
         </div>
       </div>
+    </div>  
     </section>
   </main>
 
