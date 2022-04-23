@@ -1,3 +1,13 @@
+
+fetch("../../cars/fixtures/Electric.json").then((data)=>{
+    return data.json();
+}).then((carData)=>{
+    console.log(carData[2].PRICE);
+    
+})
+        
+
+
 // Add border to selected option
 function selectedCardCSS (value) {
     // find the selected element
@@ -46,3 +56,5 @@ function selectMileageSize(value) {
     console.log(mileageSize)
     selectedCardCSS(value)
 } 
+
+
