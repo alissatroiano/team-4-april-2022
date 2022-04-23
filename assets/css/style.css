@@ -218,6 +218,23 @@ a.link-secondary:hover {
     color: #4b5887;
 }
 
+/* Team page */
+
+.card-body i{
+    padding: 2px;
+}
+
+#team-card {
+    border: 0; 
+    width: 10rem;
+    margin-top: 25px;
+}
+
+#team-card img {
+    border-radius: 5rem;
+    width: 10rem;
+
+}
 @media only screen and (min-width: 600px) {
     .jumbotron {
         max-width: 100%;
