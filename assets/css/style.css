@@ -49,6 +49,7 @@ p {
 }
 
 .btn.btn-main {
+    font-family: 'Oswald', sans-serif;
     background-color: #4b5887;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: var(--bg-gray-1);
@@ -79,17 +80,20 @@ p {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    font-size: 1.25rem;
-    font-weight: 410;
-    color: var(--p-blue-3);
+    font-size: 1.50rem;
+    font-weight: 450;
+    padding: 15px;
+    color: var(--p-blue-1);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    font-size: 1.25rem;
-    font-weight: 410;
+    font-size: 1.50rem !important;
+    font-weight: 450 !important;
+    padding: 15px !important;
     color: var(--p-blue-1);
     text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
 }
@@ -177,29 +181,56 @@ p.lead {
     margin: 10px 0;
 }
 
+/* Quiz Page */
+
+#sizeCompact:hover, #sizeMed:hover, #sizeSUV:hover {
+    background-color: var(--bg-gray-1);
+    box-shadow: 0px 0px 10px #cddbc2;
+}
+
+
 /* Footer */
 footer {
-    font-family: 'futura-pt', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    background-color: #cddbc2;
+    letter-spacing: 0.5px;
 }
 
 .footer-text {
-    font-family: 'futura-pt', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
+    color: var(--p-blue-3);
+    text-transform: uppercase;
 }
 
 #footer-links a {
-    font-family: 'futura-pt', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1rem;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 a.footer-link {
-    color: var(--p-blue-1);
+    color: var(--bg-gray-1);
 }
 
 #footer-cta {
-    background-color: #79c1cca8;
-    padding: 5px 10px;
+    background-color: #4b5887;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    color: var(--bg-gray-1);    
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+#footer-cta:hover {
+    background-color: var(--p-blue-1);
+    color: var(--bg-gray-1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+}
+
+a.link-secondary:hover {
+    color: #4b5887;
 }
 
 @media only screen and (min-width: 600px) {
@@ -207,7 +238,7 @@ a.footer-link {
         max-width: 100%;
         height: 100vh;
         min-height: 100%;
-        margin-top: 30px;
+        margin-top: 8rem;
     }
 
     h1.display-4 {
@@ -217,4 +248,4 @@ a.footer-link {
         margin: 0 15px;
     }
 
-}
+} 
