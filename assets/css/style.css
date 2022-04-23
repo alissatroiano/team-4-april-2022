@@ -17,6 +17,7 @@
     box-sizing: border-box;
 }
 
+
 /* Global Styles */
 main {
     padding: 1rem;
@@ -247,5 +248,12 @@ a.link-secondary:hover {
         color: var(--p-blue-1);
         margin: 0 15px;
     }
+}
 
-} 
+
+/* QUESTIONS */
+
+/*selected question border*/
+.card-selected {
+    box-shadow: 0 0 5px 5px #79c1cc;
+}
