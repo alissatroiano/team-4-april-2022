@@ -177,6 +177,7 @@ In addition to the Navbar features the footer displays:
 9. Observe all tests are now passing
 10. Mark test, "passed"
 
+
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser
 2. Click on the CTA button to visit the calculator tool
@@ -210,13 +211,38 @@ In addition to the Navbar features the footer displays:
 3. Scroll down to search for a vehicle
 4. Click on a choice for each question
 5. Click, "Search"
+6. Observe that clicking the "Search" button returns nothing on the front-end
+7. Open up the JS console
+8. Observe a 404 error, stating that the JSON file can not be found by the server
+9. Consult with team
+10. Have team member refactor and troubleshoot
+11. Observe that the error during production resulted from the use of a file path in the fetch statement
+12. Replace the file path with a URL
+13. Commit, push and deploy changes
+14. Repeat steps 1-5
+15. Observe that the search functionality has been repaired and search results are now printing on the front end.
+16. Open the JavaScript console
+17. Observe that there are no longer any errors
+18. Mark test, "passed"
 
+### JS Test 4: JSHint Test
+1. Copy the contents of `script.js`
+2. Visit [JSHint](https://jshint.com/)
+3. Paste the contents of `script.js` into the JavaScript validator
+4. Observe the **warnings**
+5. Add semicolons wherever they are missing
+6. Notice the remaining warnings suggest dot notation
+7. Observe there are no errors with the JavaScript
+8. Repeat steps 1 - 3
+9. Mark test, "passed"
 
 | **Bug ID** | **Description of Bug** | **Problem** | **Fix/Solution** |
 |||||
 |||||
 |||||
 |||||
+
+
 
 ### **Known Limitations**
 
