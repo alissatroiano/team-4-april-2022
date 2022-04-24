@@ -37,30 +37,42 @@ function displaySearchResults(resultsList) {
     // find the display element and clear it
     display = document.getElementById("searchResultsDisplay")
     display.innerHTML = ""
-    if (resultsList.length >= 2) {
-        // more than 2 results in the list, shuffle the list and take the first 2 results
-        if (resultsList.length > 2){
-            resultsList = resultsList.sort(() => Math.random() - 0.5)
-            var resultsList = resultsList.slice(0,2)
+    // check if list contains any cars
+    if (resultsList.length > 0) {
+        if (resultsList.length >= 2) {
+            // more than 2 results in the list, shuffle the list and take the first 2 results
+            if (resultsList.length > 2){
+                resultsList = resultsList.sort(() => Math.random() - 0.5)
+                var resultsList = resultsList.slice(0,2)
+            }
         }
         // for all the items in the results, display thier info on screen
         for (const car of resultsList) {
             display.innerHTML += `
             <div class="card car-display-card">
                 <div class="card-header">
-                  <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
+                    <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
                 </div>
                 <div class="card-body py-5">
-                  <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
-                  <h5>Specification</h5>
-                  <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
-                  <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
-                  <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
-                  <p class="mb-0">Price - $${car['PRICE']}</p>
+                    <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
+                    <h5>Specification</h5>
+                    <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
+                    <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
+                    <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
+                    <p class="mb-0">Price - $${car['PRICE']}</p>
                 </div>
             </div>
             `
         }
+    } else {  // error message display
+        display.innerHTML = `
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h3>Ooops! There aren't any results to display!</h3>
+                    <p>Please make a different selection and try again</p>
+                </div>
+            </div>
+        `
     }
 }
 
