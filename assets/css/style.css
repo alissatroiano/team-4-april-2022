@@ -41,12 +41,6 @@ p {
 
 i {
     color: #4b5887;
-<<<<<<< HEAD
-    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
-        0px 8px 13px rgba(110, 110, 110, 0.1),
-        0px 18px 23px rgba(135, 135, 135, 0.1);
-=======
->>>>>>> e583bfbcce216350796d19b123db5b3ec4a2c405
 }
 
 i:hover {
@@ -177,13 +171,6 @@ img {
 
 .mission-bg {
     background-color:var(--s-blue-2)!important;
-}
-
-.mission-container {
-    max-width: 100%;
-    height: 100vh;
-    min-height: 100%;
-    margin-top: 50px;
 }
 
 p.mission-statement {
@@ -412,7 +399,12 @@ a.link-secondary:hover {
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .jumbotron {
         max-width: 100%;
-        min-height: 100vh;
         margin: 0 auto;
+    }
+    .mission-container {
+        max-width: 100%;
+        min-height: 100%;
+        height: auto;
+        margin-bottom: 50px;
     }
 }
