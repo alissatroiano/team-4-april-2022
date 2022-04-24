@@ -109,4 +109,3 @@ function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
         return yearCostSaving
     }
 }
-
