@@ -89,7 +89,7 @@ function searchButtonClick() {
         return false;
     } else {
         // collect data from the local database
-        fetch("../../cars/fixtures/electric.json")
+        fetch("../../electric.json")
         .then(
             response => response.json()
         )
