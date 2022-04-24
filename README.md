@@ -180,5 +180,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 ### **Media**
 - [EvSpecifications](https://www.evspecifications.com/) 
     Source for the images of the cars in the database
+  
+- [Pixabay](https://pixabay.com/illustrations/faulty-break-down-car-4693238/)
 
 ### **Acknowledgements**
