@@ -16,36 +16,26 @@ function selectedCardCSS (value) {
     }
 }
 
-// Car size question
-let carSize = "";  // define variables to store data
+// Car questions
+var carSizeInput = null;
+var budgetInput = null;
 
-function selectCarSize(value) {
-    let carSize = value;
-    console.log(carSize);
+// functions to set local variables on click
+function setOptionVariable(value) {
+    if (value.substring(0,2) == "Q1") {
+        carSizeInput = value;
+    } else if (value.substring(0,2) == "Q2") {
+        budgetInput = value;
+    }
     selectedCardCSS(value);
 }
-
-// Budget question
-let budgetSize = "";  // define variables to store data
-
-function selectBudgetSize(value) {
-    let budgetSize = value;
-    console.log(budgetSize);
-    selectedCardCSS(value);
-} 
-
-// Mileage question
-let mileageSize = "";  // define variables to store data
 
 function selectMileageSize(value) {
     let mileageSize = value;
     console.log(mileageSize);
     selectedCardCSS(value);
-} 
-
-// Search Button Click Function
+}
 
 function searchButtonClick () {
-    // add car search function here
-    calculateFuelSavings();
+
 }
