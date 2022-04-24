@@ -29,6 +29,8 @@
 11. Mark test "passed"
 
 
+### HTML Test 3: team.html
+
 ## JavaScript Tests
 
 ## CSS Tests

@@ -10,8 +10,10 @@
     --p-yellow: #E8A413;
     --p-blue-3: #0d1018;
     --s-blue: #79C1CC;
+    --s-blue-2: #79c1cc46;
     --s-green-1: #9df19c;
     --s-green-2: #b6f5b5;
+    --s-green-3: #cddbc2;
     --t-green: #0c4b0c;
 }
 
@@ -39,9 +41,12 @@ p {
 
 i {
     color: #4b5887;
+<<<<<<< HEAD
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(110, 110, 110, 0.1),
         0px 18px 23px rgba(135, 135, 135, 0.1);
+=======
+>>>>>>> e583bfbcce216350796d19b123db5b3ec4a2c405
 }
 
 i:hover {
@@ -53,6 +58,10 @@ main {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.card {
+    border: none!important;
 }
 
 /*--------------- Custom Classes */
@@ -67,7 +76,6 @@ main {
     margin-left: 10px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    box-shadow: 0px 0px 10px var(--p-blue-3);
 }
 
 .btn.btn-main:hover {
@@ -133,7 +141,7 @@ main {
     font-weight: 450;
     padding: 15px;
     color: var(--p-blue-1);
-    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+    
 }
 
 .navbar-brand {
@@ -150,7 +158,6 @@ main {
 /* Landing Page */
 .landing-page {
     max-width: 100%;
-    height: 100vh;
     min-height: 100%;
     overflow: hidden;
     position: relative;
@@ -164,8 +171,12 @@ img {
 
 .jumbotron {
     max-width: 100%;
-    min-height: 100%;
+    min-height: 100%!important;
     margin-top: 50px;
+}
+
+.mission-bg {
+    background-color:var(--s-blue-2)!important;
 }
 
 .mission-container {
@@ -250,6 +261,36 @@ p.lead {
     margin: 10px;
 }
 
+.quiz-icon {
+    color: #79C1CC!important;
+}
+
+
+
+.calculator-card {
+    background-color:var(--s-blue-2)!important;
+}
+
+.quiz-card-header {
+    background-color:#4b58879a!important;
+}
+
+.quiz-card {
+    border: 5px solid #4b5887!important;
+}
+
+.quiz-title {
+    color: var(--bg-gray-1)!important;
+}
+
+.quiz-results-header {
+    background-color: #cddbc2!important;   
+}
+
+.quiz-results-bg {
+    border: 10px solid #cddbc28a!important;
+}
+
 
 /* Footer */
 footer {
@@ -282,9 +323,13 @@ a.link-secondary:hover {
     padding: 2px;
 }
 
+.team-text-small {
+    font-size: smaller;
+}
+
 #team-card {
     border: 0;
-    width: 10rem;
+    width: 12rem;
     margin-top: 25px;
 }
 

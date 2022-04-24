@@ -1,6 +1,6 @@
 # **Electrillo**
 
-![Live Project Representation Image]()
+![Live Project Representation Image](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/responsivePage.png?raw=true)
 
 [Link to Live Project](https://alissatroiano.github.io/team-4-april-2022/)
 
@@ -40,20 +40,17 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 - Learn more about the issues caused by using traditional fuel types and the benefits of alternatives
 - Easily find vehicles that use alternative power sources that I am interested in and would suit the users needs
 - Calculate possible savings by moving to an alternative fuel
-- Easily find retailers that have a chosen vehicle available for purchase
 
 ## **User Stories**
 
 | ID | As a... | I Want To Be Able To... | So That I Can...|
 | --- | --- | --- | --- |
-| 01 | User | Find more information about the website | Understand what the website is designed for and what it can do for me |
-| 02 | User | Learn more about the problems caused by using traditionially fueled vehicles | Understand the problems and see the benefit if changing vehicle power sources |
-| 03 | User | Choose what type or style of vehicle that I am looking for | Be shown approptiate vehicle options that are more eco-friendly |
-| 04 | User | Sort or filter the vehicles displayed to me | Refine the options to those I am more likely to want to see |
-| 05 | User | View information about individual vehicles | Decide if the vehicle I am reading about is perfect for me |
-| 06 | User | Easily find a link to Retailer websites | View up to date prices and make a purchase if I want to |
-| 07 | User | Save any vehicles that I am interested in | Easily referance them in the future |
-| 08 | User | Calculate how much I could save on fuel moving to an alternative | See the financial benefit of changing vehicle |
+| 01 | User | Easily navigate the website | Explore all the pages and features |
+| 02 | User | Find more information about the website | Understand what the website is designed for and what it can do for me |
+| 03 | User | Learn more about the problems caused by using traditionially fueled vehicles | Understand the problems and see the benefit if changing vehicle power sources |
+| 04 | User | Calculate how much I could save on fuel moving to an alternative vehicle | See the financial benefit of changing to an electric vehicle |
+| 05 | User | Choose what type or style of vehicle that I am looking for | Be shown approptiate vehicle options that are more eco-friendly |
+| 06 | User | View information about individual vehicles | Decide if the vehicle I am reading about is perfect for me |
 
 ## **SCOPE**
 
@@ -75,27 +72,49 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 ## **SKELETON**
 
 ### **Wireframes**
+[Link to the Wireframes](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/wireframes/wireframes.md)
 
 ### **Design Alterations**
+While working on the project we had to execute the following alterations:
 
 |Page/Section |Alteration |Reason |
-|-----|-----|-----|
-||||
-||||
-||||
+|Home Page|Removed the team section from the Home Page|It is a priority to display the mission of the website and define a stronger identity|
+|Home Page|Removed the Car Search feature|In order to deliver are more clean website we moved the feature to a different page|
+|Evaluation Page|Moved the Calculator up|The Calculator is the core feature of the page so it needs to be displayed first|
+|Evaluation Page|Pop-up the result of the Evaluation|In order to give the user a better experience, easier to read and visualize|
+|Evaluation Page|Car Search highlighted with a scroll down arrows|In order to give the user a clear suggestion on how to navigate the website|
 
-**Colour Scheme**
-
-**Typography**
-
+**Colour Scheme and Typography**
+![Color Scheme](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/color-scheme.png?raw=true)
 
 ## **FEATURES**
+### **Multi Page Elements**
 
-### **CRUD Table**
+**Navbar**
+- Logo: To display the website identity and act as home button
+- Mission: Links to the mission behind the project
+- Evaluator: Links to the core features of the website
+- Team: Links to a presentation of the team with contacts options
 
-### **Defensive Programming**
+**Footer**
+In addition to the Navbar features the footer displays:
+- Social links to informative websites and the project repository
+
+### **Home Page**
+- Mission statement
+- Direct link to the Evaluator page
+
+### **Evaluator Page**
+- An EV/Fuel Calculator that will display, in a pop-up window, the advantages on choosing an electric car.
+- A mini-questionnaire to suggest to the user some options within their budget and preferred car size.
+
+### **Team Page**
+- Cards of each team member, implemented with links to their LinkedIn and Github pages.
 
 ### **Features for Future Releases**
+- A wider list of cars to suggest in the mini-questionnaire
+- Implement more currencies and different units of measurements for the EV/Fuel Calculator
+- 
 
 ## **BUGS AND ISSUES**
 
@@ -120,7 +139,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 - [Python](https://www.python.org/) - Programming Language
 - [Bootstrap v5](https://getbootstrap.com/) - Library Import
 - [Google Fonts](https://fonts.google.com/) - Typography Import
-- [Font Awesome](https://fontawesome.com/) - Icon provider
+- [Font Awesome v5.14](https://fontawesome.com/) - Icon provider
 
 </details>
 
@@ -138,8 +157,9 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 
 - [Google Chrome Development Tools](https://developer.chrome.com/docs/devtools/) - Design/Development Tools
 - [Balsamiq](https://balsamiq.com/) - Wireframe designer software
+- [Figma](https://www.figma.com/) - Wireframe designer software
 - [MongoDB Compass](https://www.mongodb.com/products/compass) - GUI of MongoDB
-- [Dbdiagram.io](https://dbdiagram.io/) - Data Schema drawing
+- [Dbdiagram.io](https://dbdiagram.io/) - Data Schema drawing tool
 </details>
 
 <details>
@@ -164,6 +184,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 - [CompressPNG](https://compresspng.com/) - Image Compression
 - [Markdown Table Generator](https://www.tablesgenerator.com/markdown_tables) - Markdown Table Production
 - [Table Converter](https://tableconvert.com/excel-to-markdown) - Excel to Markdown table converter 
+- [Am I Responsive?](http://ami.responsivedesign.is/) - Responsive design validator (used only for documentation purposes)
 </details>
 
 ## **CREDITS**
