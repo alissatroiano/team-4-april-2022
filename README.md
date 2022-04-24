@@ -280,11 +280,17 @@ In addition to the Navbar features the footer displays:
 
 ### **Content**
 - [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+  
+- The [404 Error Page](404.html) was copied from [FreeFrontEnd](https://freefrontend.com/html-css-404-page-templates/)
 
 ### **Media**
 - [EvSpecifications](https://www.evspecifications.com/) 
     Source for the images of the cars in the database
   
 - [Pixabay](https://pixabay.com/illustrations/faulty-break-down-car-4693238/)
+
+- The illustration on the landing page was copied from [iStockPhoto](https://www.istockphoto.com/illustrations)
+
+- The favicon image was copied from [FreeSVG](https://freesvg.org/lightning-symbol-vector-image)
 
 ### **Acknowledgements**
