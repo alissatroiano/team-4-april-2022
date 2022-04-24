@@ -34,7 +34,7 @@ function createNavbar () {
 function createFooter () {
     container = document.getElementById("footer-container")
     container.innerHTML = `
-    <footer class="flex-wrap d-flex justify-content-center align-items-center py-3 border-0 shadow-lg my-0 mx-auto">
+    <footer class="flex-wrap d-none d-md-flex justify-content-center align-items-center py-3 border-0 my-0 mx-auto">
     <div class="col-xs-8 col-sm-4 d-flex align-items-center">
     <h6 class="text-dark footer-brand ms-3 ms-md-5"><i class="fas fa-bolt"></i> Electrillo
     <span class="text-muted">&copy; 2022</span>
