@@ -89,7 +89,7 @@ function searchButtonClick() {
         return false;
     } else {
         // collect data from the local database
-        fetch("../../electric.json")
+        fetch("https://alissatroiano.github.io/team-4-april-2022/electric.json")
         .then(
             response => response.json()
         )
