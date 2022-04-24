@@ -124,7 +124,7 @@ In addition to the Navbar features the footer displays:
 5. Notice there is a stray `</p>` tag on like 36
 6. Open IDE and visit `index.html`
 7. Remove the stray element
-8. Repeat steps 1-3
+8. Repeat steps 1-3 until there are no errors
 9. Mark test "passed"
 
 ### HTML Test 2: Questions.html
@@ -136,7 +136,7 @@ In addition to the Navbar features the footer displays:
 6. Observe that there is an error in the font awesome CDN link
 7. Conclude that error most likely occurred while merging or formatting the code
 8. Replace with correct CDN link
-9. Repeat steps 1-3
+9.  Repeat steps 1-3 until there are no errors
 10. Observe validator's outpit, "Document checking completed. No errors or warnings to show"
 11. Mark test "passed"
 
@@ -151,8 +151,18 @@ In addition to the Navbar features the footer displays:
 8. Visit `team.html` and observe that all team cards are using the same ID
 9. Create new ID names for all div elements effected by this error
 10. Visit `style.css` and style all new ID's accordingly
-11. Repeat steps 1-3
+11.  Repeat steps 1-3 until there are no errors
 12. Mark test "passed"
+
+### HTML Test 4: 404.html
+1. Visit [W3C Validator](https://validator.w3.org/)
+2. Paste the contents of `404.html` into the tool to check input 
+3. Click "check"
+4. Observe the following **warning**: "Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed."
+5. Visit `404.html` in IDE
+6. Replace `div` with `h2`
+7. Repeat steps 1-3 until there are no errors
+8. Mark test "passed"
 
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser

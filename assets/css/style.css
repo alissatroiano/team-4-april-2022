@@ -361,6 +361,7 @@ a.link-secondary:hover {
     position: relative;
 }
 
+#error, #error2,
 .err {
     font-family: 'futura-pt', sans-serif;
     color: var(--p-yellow);
