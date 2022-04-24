@@ -15,6 +15,19 @@
 8. Repeat steps 1-3
 9. Mark test "passed"
 
+### HTML Test 2: Questions.html
+1. Visit [W3C Validator](https://validator.w3.org/)
+2. Paste the contents of `questions.html` into the tool to check input 
+3. Click "check"
+4. Observe the following warning: "Potentially bad value sha512-....for attribute integrity on element link: Invalid base64-value ("
+5. Open IDE and visit `questions.html`
+6. Observe that there is an error in the font awesome CDN link
+7. Conclude that error most likely occurred while merging or formatting the code
+8. Replace with correct CDN link
+9. Repeat steps 1-3
+10. Observe validator's outpit, "Document checking completed. No errors or warnings to show"
+11. Mark test "passed"
+
 
 ## JavaScript Tests
 
