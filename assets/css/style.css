@@ -232,6 +232,20 @@ p.lead {
     font-family: 'futura-pt', sans-serif;
 
 }
+
+#searchResultsDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.car-display-card {
+    width: 300px;
+    margin: 10px;
+}
+
+
 /* Footer */
 footer {
     font-family: 'futura-pt', sans-serif;
