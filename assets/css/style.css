@@ -6,27 +6,20 @@
     --bg-gray-1: #fafafa;
     --bg-gray-2: #f0f0f0;
     --p-blue-1: #303854;
+    --p-green: #00b300;
     --p-yellow: #E8A413;
     --p-blue-3: #0d1018;
     --s-blue: #79C1CC;
     --s-green-1: #9df19c;
     --s-green-2: #b6f5b5;
+    --t-green: #0c4b0c;
 }
 
 * {
     box-sizing: border-box;
 }
 
-
 /* Global Styles */
-main {
-    padding: 1rem;
-    height: auto;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;}
-
 h1,
 h2,
 h3,
@@ -46,17 +39,23 @@ p {
 
 i {
     color: #4b5887;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
 }
 
 i:hover {
     color: #79c1cc;
 }
 
-/*--------------- Custom Classes */
+main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+/*--------------- Custom Classes */
 .font-dark {
     color: var(--p-blue-1);
 }
@@ -64,22 +63,60 @@ i:hover {
 .btn.btn-main {
     font-family: 'Oswald', sans-serif;
     background-color: #4b5887;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     color: var(--bg-gray-1);
     margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    box-shadow: 0px 0px 10px var(--p-blue-3);
 }
 
 .btn.btn-main:hover {
     background-color: var(--p-blue-1);
     color: var(--bg-gray-1);
-
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px var(--p-blue-3);
     margin-left: 10px;
+}
+
+.green-btn {
+    font-family: 'Oswald', sans-serif;
+    background-color: var(--p-blue-3);
+    color: var(--bg-gray-1);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    box-shadow: 0px 0px 10px var(--p-blue-3);
 }
 
 .section-heading {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
+}
+
+.text-green,
+.btn-none {
+    font-family: 'futura-pt', sans-serif;
+    background-color: transparent;
+    background: none;
+    border: none;
+    color: var(--p-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.text-blue {
+    font-family: 'futura-pt', sans-serif;
+    color: #4b5887;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.text-bold {
+    font-weight: 600;
+    font-family: 'futura-pt', sans-serif;
 }
 
 /*-------------- Navbar */
@@ -107,7 +144,11 @@ i:hover {
 
 /* Landing Page */
 .landing-page {
+    max-width: 100%;
+    height: 100vh;
+    min-height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 img {
@@ -119,7 +160,7 @@ img {
 .jumbotron {
     max-width: 100%;
     min-height: 100%;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 .mission-container {
@@ -175,16 +216,29 @@ p.lead {
 }
 
 /* Quiz Page */
-#sizeCompact:hover, #sizeMed:hover, #sizeSUV:hover {
+#sizeCompact:hover,
+#sizeMed:hover,
+#sizeSUV:hover {
     background-color: var(--bg-gray-1);
     box-shadow: 0px 0px 10px #cddbc2;
 }
 
+#modal-desc {
+    font-size: 1rem;
+    color: #4b5887;
+}
+
+.text-muted.text-small {
+    font-family: 'futura-pt', sans-serif;
+
+}
 /* Footer */
 footer {
     font-family: 'futura-pt', sans-serif;
     letter-spacing: 0.5px;
-    background-color: var(--bg-gray-2);;
+    background-color: var(--bg-gray-2);
+    ;
+    position: relative;
 }
 
 .footer-text {
@@ -206,12 +260,12 @@ a.link-secondary:hover {
 
 /* Team page */
 
-.card-body i{
+.card-body i {
     padding: 2px;
 }
 
 #team-card {
-    border: 0; 
+    border: 0;
     width: 10rem;
     margin-top: 25px;
 }
@@ -222,29 +276,20 @@ a.link-secondary:hover {
 
 }
 
-#footer-copyright{
+#footer-copyright {
     font-family: 'futura-pt', sans-serif;
 }
-
-@media only screen and (min-width: 600px) {
-    .jumbotron {
-        max-width: 100%;
-        height: auto;
-        margin-top: 30px;
-        margin: 0 auto;
-        overflow: hidden;
-    }
-
-    h1.display-4 {
-        font-size: 2.67rem;
-        font-weight: 410;
-        color: var(--p-blue-1);
-        margin: 0 15px;
-    }
-}
-/* QUESTIONS */
 
 /*selected question border*/
 .card-selected {
     box-shadow: 0 0 5px 5px #79c1cc;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .jumbotron {
+        max-width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+    }
 }
