@@ -32,15 +32,18 @@
       <div class="row mt-3">
         <div class="col-md-12 text-center">
           <h1 class="display-4 mb-3 my-3 md-md-4">Evaluator</h1>
+          <div class="col-12" id="img-column">
+            <img src="assets/images/evaluator_people_small.png" alt="group_of_people" class="img img-fluid align-content-center">
+          </div>
           <p class="mx-3 mx-md-5 py-2 py-md-3">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
             protecting the planet.
           </p>
-          <hr>
         </div>
       </div>
+      <h3 class="text-center">Find out how much you can save</h3>
       <div class="row mt-3">
         <div class="col-12">
-          <div class="card card-body p-3 px-lg-5">
+          <div class="card card-body p-3 px-lg-5 calculator-card">
             <div class="row">
               <div class="col-12 col-md-6">
                 <p>Please enter your <strong>Local Fuel Price</strong> per gallon in USD</p>
@@ -95,12 +98,12 @@
     <section class="container questions-container p-3">
       <div class="row mt-3 mt-md-4 car-size-question px-5">
         <div class="col-12">
-          <h5 class="question-header mb-3 mb-md-4">Which size of car would you like?</h5>
+          <h5 class="question-header mb-3 mb-md-4 text-center">Which size of car would you like?</h5>
         </div>
         <div class="col-xs-8 col-sm-4 my-3">
-          <div class="card" id="Q1-compact" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title text-center"> Compact </h5>
+          <div class="card quiz-card" id="Q1-compact" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title text-center quiz-title"> Compact </h5>
             </div>
             <div class="card-body py-5">
               <i class="fas fa-car fa-3x text-center"></i>
@@ -108,9 +111,9 @@
           </div>
         </div>
         <div class="col-xs-8 col-sm-4 my-3 my-3">
-          <div class="card" id="Q1-mid-size" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title text-center">Mid-Size</h5>
+          <div class="card quiz-card" id="Q1-mid-size" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title text-center quiz-title">Mid-Size</h5>
             </div>
             <div class="card-body py-5">
               <i class="fas fa-car fa-3x"></i>
@@ -118,9 +121,9 @@
           </div>
         </div>
         <div class="col-xs-8 col-sm-4 my-3">
-          <div class="card" id="Q1-suv" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title">SUV</h5>
+          <div class="card quiz-card" id="Q1-suv" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title text-center quiz-title">SUV</h5>
             </div>
             <div class="card-body py-5">
               <i class="fas fa-car fa-3x"></i>
@@ -130,12 +133,23 @@
       </div>
       <div class="row budget-question mb-5 px-5 mt-3">
         <div class="col-12">
-          <h5 class="question-header mb-3 mb-md-4">What is your budget?</h5>
+          <h5 class="question-header mt-4 mb-3 mb-md-4 text-center">What is your budget?</h5>
         </div>
         <div class="col-xs-8 col-sm-4 my-3">
-          <div class="card " id="Q2-Under30" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title">Under $30,000</h5>
+          <div class="card quiz-card" id="Q2-Under30" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title quiz-title">Under $30,000</h5>
+            </div>
+            <div class="card-body py-5">
+              <i class="fas fa-car fa-3x"></i>
+              <i class="fa-solid fa-sack-dollar fa-3x quiz-icon"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-8 col-sm-4 my-3">
+          <div class="card quiz-card" id="Q2-30To50" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title quiz-title">$30,000 - $50,000</h5>
             </div>
             <div class="card-body py-5">
               <i class="fas fa-car fa-3x"></i>
@@ -143,19 +157,9 @@
           </div>
         </div>
         <div class="col-xs-8 col-sm-4 my-3">
-          <div class="card " id="Q2-30To50" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title">$30,000 - $50,000</h5>
-            </div>
-            <div class="card-body py-5">
-              <i class="fas fa-car fa-3x"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-8 col-sm-4 my-3">
-          <div class="card " id="Q2-Over50" onclick="setOptionVariable(this.id)">
-            <div class="card-header">
-              <h5 class="card-title">Over $50,000</h5>
+          <div class="card quiz-card" id="Q2-Over50" onclick="setOptionVariable(this.id)">
+            <div class="card-header quiz-card-header">
+              <h5 class="card-title quiz-title">Over $50,000</h5>
             </div>
             <div class="card-body py-5">
               <i class="fas fa-car fa-3x"></i>
