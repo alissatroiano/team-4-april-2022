@@ -164,6 +164,19 @@ In addition to the Navbar features the footer displays:
 7. Repeat steps 1-3 until there are no errors
 8. Mark test "passed"
 
+
+### CSS Jigsaw Validator Test
+1. Visit W3C Jigsaw validator in the browser
+2. Copy all properties from `style.css`
+3. Paste the contents of `style.css` in the validator tool
+4. Click, "Check"
+5. Observe an error coming from line 410
+6. Notice the media query definition is outdated
+7. Revise
+8. Repeat steps 1-4
+9. Observe all tests are now passing
+10. Mark test, "passed"
+
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser
 2. Click on the CTA button to visit the calculator tool
