@@ -3,10 +3,7 @@ fetch("../../cars/fixtures/Electric.json").then((data)=>{
     return data.json();
 }).then((carData)=>{
     console.log(carData[2].PRICE);
-    
 })
-        
-
 
 // Add border to selected option
 function selectedCardCSS (value) {
@@ -52,6 +49,34 @@ function displaySearchResults(resultsList) {
         <div class="card car-display-card quiz-results-bg">
             <div class="card-header quiz-results-header">
               <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
+
+    // check if list contains any cars
+    if (resultsList.length > 0) {
+        if (resultsList.length >= 2) {
+            // more than 2 results in the list, shuffle the list and take the first 2 results
+            if (resultsList.length > 2){
+                resultsList = resultsList.sort(() => Math.random() - 0.5)
+                var resultsList = resultsList.slice(0,2)
+            }
+        }
+        // for all the items in the results, display thier info on screen
+        for (const car of resultsList) {
+            carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh'])
+            savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings} a year with this EV!</p>`
+            display.innerHTML += `
+            <div class="card car-display-card">
+                <div class="card-header">
+                    <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
+                </div>
+                <div class="card-body py-5">
+                    <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
+                    <h5>Specification</h5>
+                    <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
+                    <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
+                    <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
+                    <p class="mb-0">Price - $${car['PRICE']}</p>
+                    ${carFuelSavings > 0 ?  savingStatement : ""}
+                </div>
             </div>
             <div class="card-body py-5">
               <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
@@ -77,7 +102,7 @@ function searchButtonClick() {
         alert("please select your car budget above")
         return false;
     } else {
-        // collect data from the local database
+        // collect data from the local database https://alissatroiano.github.io/team-4-april-2022/electric.json
         fetch("https://alissatroiano.github.io/team-4-april-2022/electric.json")
         .then(
             response => response.json()

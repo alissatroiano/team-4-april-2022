@@ -63,20 +63,20 @@ function displayCalculationResults(savingAmount) {
 
 // Fuel Savings Calculator
 
-function calculateFuelSavings(fuelPrice=4.23) {
+function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
     // Per Gallon in dollars
     // Check if custom fuel price is supplied
+    var fuelPrice=4.23
     if (customFuelPrice.value) {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
-            console.log(customFuelPrice.value);
             fuelPrice = customFuelPrice.value;
-        } else {
+        } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
             alert("Please enter a valid input for Fuel Price");
+            return False;
         }
     }
     // Check if custom vehicle MPG is supplied
     let vehicleMPG = document.getElementById("mpgValue").innerHTML;
-    console.log(vehicleMPG);
     if (vehicleMPG == "Unselected") {
         vehicleMPG = 36;
     } 
@@ -84,23 +84,29 @@ function calculateFuelSavings(fuelPrice=4.23) {
     // Per kWh in cents
     const electricityPrice = 13.72;
     // mile per kWh, Changes dependant on the car displayed?
-    const electricKwhUsage = 4;
+    if (individualDisplay == true) {
+        var electricKwhUsage = customElectricKwhUsage
+    } else {
+        var electricKwhUsage = 4;
+    }
     
     // Store variables from page
     let mileage = document.getElementById("mileageValue").innerHTML;
     if (mileage == "Unselected") {
         mileage = 30000;
-    } 
-
-    const vehicleType =  document.getElementById("vehicle-type");
+    }
     
     // Calculate the difference in yearly cost
     let electricYearCost = ((mileage / electricKwhUsage) * electricityPrice)/100;
     let fuelYearCost = (mileage / vehicleMPG) * fuelPrice;
     let yearCostSaving = Math.round((fuelYearCost - electricYearCost) * 100) / 100;
     
-    if (yearCostSaving > 0) {
-        displayCalculationResults(yearCostSaving)
+    if (individualDisplay == false) {
+        if (yearCostSaving > 0) {
+            displayCalculationResults(yearCostSaving)
+        }
+    } else {
+        return yearCostSaving
     }
 }
 
