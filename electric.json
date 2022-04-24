@@ -8,7 +8,7 @@
   "VEHICLE CLASS": "Compact",
   "ENGINE POWER": "61 kW",
   "BATTERY CAPACITY": "36.8 kWh",
-  "m/kWh": "0.41 kWh",
+  "m/kWh": 0.41,
   "PRICE": "22,000 USD",
   "data_price": 22000
 },{
@@ -21,7 +21,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "375 kW",
   "BATTERY CAPACITY": "100 kWh",
-  "m/kWh": "0.31 kWh",
+  "m/kWh": 0.31,
   "PRICE": "94,990 USD",
   "data_price": 94990
 },{
@@ -34,7 +34,7 @@
   "VEHICLE CLASS": "Compact",
   "ENGINE POWER": "83 kW",
   "BATTERY CAPACITY": "24 kWh",
-  "m/kWh": "0.3 kWh",
+  "m/kWh": 0.3,
   "PRICE": "32,500 USD",
   "data_price": 32500
 },{
@@ -47,7 +47,7 @@
   "VEHICLE CLASS": "Compact",
   "ENGINE POWER": "125 kW",
   "BATTERY CAPACITY": "42.2 kWh",
-  "m/kWh": "0.29 kWh",
+  "m/kWh": 0.29,
   "PRICE": "44,450 USD",
   "data_price": 44450
 },{
@@ -60,7 +60,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "198 kWh",
   "BATTERY CAPACITY": "75.7",
-  "m/kWh": "0.34 kWh",
+  "m/kWh": 0.34,
   "PRICE": "43,895 USD",
   "data_price": 43895
 },{
@@ -73,7 +73,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "100 kW",
   "BATTERY CAPACITY": "39.2 kWh",
-  "m/kWh": "0.27 kWh",
+  "m/kWh": 0.27,
   "PRICE": "28,450 USD",
   "data_price": 28450
 },{
@@ -86,7 +86,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "101 kW",
   "BATTERY CAPACITY": "38.3 kWh",
-  "m/kWh": "0.25 kWh",
+  "m/kWh": 0.25,
   "PRICE": "47,140 USD",
   "data_price": 47140
 },{
@@ -99,7 +99,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "81 kW",
   "BATTERY CAPACITY": "31.8 kWh",
-  "m/kWh": "0.31 kWh",
+  "m/kWh": 0.31,
   "PRICE": "21,430 USD",
   "data_price": 21430
 },{
@@ -112,7 +112,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "150 kW",
   "BATTERY CAPACITY": "64 kWh",
-  "m/kWh": "0.3 kWh",
+  "m/kWh": 0.3,
   "PRICE": "38,500 USD",
   "data_price": 38500
 },{
@@ -125,7 +125,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "135 kW",
   "BATTERY CAPACITY": "32.6 kWh",
-  "m/kWh": "0.31 kWh",
+  "m/kWh": 0.31,
   "PRICE": "34,750 USD",
   "data_price": 34750
 },{
@@ -138,7 +138,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "110 kW",
   "BATTERY CAPACITY": "40 kWh",
-  "m/kWh": "0.32 kWh",
+  "m/kWh": 0.32,
   "PRICE": "32,600 USD",
   "data_price": 32600
 },{
@@ -151,7 +151,7 @@
   "VEHICLE CLASS": "Compact",
   "ENGINE POWER": "60 kW",
   "BATTERY CAPACITY": "22 kWh",
-  "m/kWh": "0.38 kWh",
+  "m/kWh": 0.38,
   "PRICE": "25,500 USD",
   "data_price": 25500
 },{
@@ -164,7 +164,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "44 million horsepower",
   "BATTERY CAPACITY": "Rocket size kWh",
-  "m/kWh": " Hypersonic kWh",
+  "m/kWh": 999,
   "PRICE": "69,900 USD",
   "data_price": 69900
 },{
@@ -177,7 +177,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "150 kW",
   "BATTERY CAPACITY": "78 kWh",
-  "m/kWh": "0.43 kWh",
+  "m/kWh": 0.43,
   "PRICE": "56,395 USD",
   "data_price": 56395
 },{
@@ -190,7 +190,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "160 kW",
   "BATTERY CAPACITY": "93.4 kWh",
-  "m/kWh": "0.5 kWh",
+  "m/kWh": 0.5,
   "PRICE": "187,610 UDS",
   "data_price": 187610
 },{
@@ -203,7 +203,7 @@
   "VEHICLE CLASS": "Mid-Size",
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "78 kWh",
-  "m/kWh": "0.37 kWh",
+  "m/kWh": 0.37,
   "PRICE": "63,000 USD",
   "data_price": 63000
 },{
@@ -216,7 +216,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "80 kWh",
-  "m/kWh": " 0.35 kWh",
+  "m/kWh": 0.35,
   "PRICE": "67,900 USD",
   "data_price": 67900
 },{
@@ -229,7 +229,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "147 kW",
   "BATTERY CAPACITY": "90 kWh",
-  "m/kWh": " 0.44 kWh",
+  "m/kWh": 0.44,
   "PRICE": "69,500 USD",
   "data_price": 69500
 },{
@@ -242,7 +242,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "140 kW",
   "BATTERY CAPACITY": "95 kWh",
-  "m/kWh": "0.46 kWh",
+  "m/kWh": 0.46,
   "PRICE": "81,800 USD",
   "data_price": 81800
 },{
@@ -255,7 +255,7 @@
   "VEHICLE CLASS": "SUV",
   "ENGINE POWER": "375 kW",
   "BATTERY CAPACITY": "100 kWh",
-  "m/kWh": "0.43 kWh",
+  "m/kWh": 0.43,
   "PRICE": "99,990 USD",
   "data_price": 99990
 }]
