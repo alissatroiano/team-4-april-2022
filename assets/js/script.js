@@ -26,30 +26,25 @@ function selectedCardCSS (value) {
     }
 }
 
-// Car questions
+// Car Search  ---------------------------------------------------- //
+
 // Global Variables
 var carSizeInput = null;
 var budgetInput = null;
 
-// functions to set local variables on click
+// function to set local variables on click
 function setOptionVariable(value) {
     if (value.substring(0,2) == "Q1") {
         carSizeInput = value;
     } else if (value.substring(0,2) == "Q2") {
         budgetInput = value;
     }
-    console.log(carSizeInput)
-    console.log(budgetInput)
     selectedCardCSS(value);
 }
 
-function selectMileageSize(value) {
-    let mileageSize = value;
-    console.log(mileageSize);
-    selectedCardCSS(value);
-}
-
+// function to display the car search results
 function displaySearchResults(resultsList) {
+    // find the display element and clear it
     display = document.getElementById("searchResultsDisplay")
     display.innerHTML = ""
     for (const car of resultsList) {
@@ -66,12 +61,12 @@ function displaySearchResults(resultsList) {
               <p class="mb-0">Miles Per Kwh - ${car['m/kWh']}</p>
               
             </div>
-        </div>
         `
     }
 }
 
 function searchButtonClick() {
+    // validate user input with an alert if options are not clicked
     if (budgetInput == null && carSizeInput == null) {
         alert("please select your car budget above and prefered car size above")
         return false;
@@ -82,36 +77,48 @@ function searchButtonClick() {
         alert("please select your car budget above")
         return false;
     } else {
-        console.log("options selected")
-        console.log(carSizeInput)
-        console.log(budgetInput)
-        var searchResults = [];
-        fetch("../../cars/fixtures/Electric.json")
+        // collect data from the local database
+        fetch("https://alissatroiano.github.io/team-4-april-2022/electric.json")
         .then(
             response => response.json()
         )
         .then(
             carData => {
+                // set empty storage lists
+                var resultsStorage = [];
+                var searchResults = [];
+                // filer all vehicles by vehicle class/size
                 for (let i = 0; i < carData.length; i++) {
                     if (carData[i]["VEHICLE CLASS"].toLowerCase() == carSizeInput.slice(3)) {
-                        searchResults.push(carData[i])
+                        resultsStorage.push(carData[i])
                     }
                 }
+                // filer all vehicles by price in brackets
+                switch (budgetInput.slice(3)) {
+                    case "Under30":
+                        for (let i = 0; i < resultsStorage.length; i++) {
+                            if (resultsStorage[i]["data_price"] < 30000) {
+                                searchResults.push(resultsStorage[i])
+                            }
+                        }
+                        break;
+                    case "30To50":
+                        for (let i = 0; i < resultsStorage.length; i++) {
+                            if (resultsStorage[i]["data_price"] >= 30000 && resultsStorage[i]["data_price"] <= 50000) {
+                                searchResults.push(resultsStorage[i])
+                            }
+                        }
+                        break;
+                    case "Over50":
+                        for (let i = 0; i < resultsStorage.length; i++) {
+                            if (resultsStorage[i]["data_price"] > 50000) {
+                                searchResults.push(resultsStorage[i])
+                            }
+                        }
+                        break;
+                    }
+                // call the display search results function
                 displaySearchResults(searchResults)
-                // let suggestions = carData.map(suggestions => [
-                //     suggestions.img,
-                //     suggestions.MODEL,
-                //     suggestions.MANUFACTURER,
-                //     suggestions.VEHICLE_CLASS,
-                //     suggestions.ENGINE_POWER,
-                //     suggestions.BATTERY_CAPACITY,
-                //     suggestions.PRICE
-                // ]);
-                // suggestions.forEach((suggestions => {
-                //     console.log(suggestions[3],[7])
-                // }));
-                // console.log(suggestions);
             }
-        );
-        }
+        )}
     }

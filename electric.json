@@ -9,7 +9,8 @@
   "ENGINE POWER": "61 kW",
   "BATTERY CAPACITY": "36.8 kWh",
   "m/kWh": "0.41 kWh",
-  "PRICE": "22,000 USD"
+  "PRICE": "22,000 USD",
+  "data_price": 22000
 },{
   "_id": {
     "$oid": "6261e6cd2f2f376eabd2aedc"
@@ -21,7 +22,8 @@
   "ENGINE POWER": "375 kW",
   "BATTERY CAPACITY": "100 kWh",
   "m/kWh": "0.31 kWh",
-  "PRICE": "94,990 USD"
+  "PRICE": "94,990 USD",
+  "data_price": 94990
 },{
   "_id": {
     "$oid": "6261e6cf2f2f376eabd2aedd"
@@ -33,7 +35,8 @@
   "ENGINE POWER": "83 kW",
   "BATTERY CAPACITY": "24 kWh",
   "m/kWh": "0.3 kWh",
-  "PRICE": "32,500 USD"
+  "PRICE": "32,500 USD",
+  "data_price": 32500
 },{
   "_id": {
     "$oid": "6261e6d12f2f376eabd2aede"
@@ -45,7 +48,8 @@
   "ENGINE POWER": "125 kW",
   "BATTERY CAPACITY": "42.2 kWh",
   "m/kWh": "0.29 kWh",
-  "PRICE": "44,450 USD"
+  "PRICE": "44,450 USD",
+  "data_price": 44450
 },{
   "_id": {
     "$oid": "6261e6d32f2f376eabd2aedf"
@@ -57,7 +61,8 @@
   "ENGINE POWER": "198 kWh",
   "BATTERY CAPACITY": "75.7",
   "m/kWh": "0.34 kWh",
-  "PRICE": "43,895 USD"
+  "PRICE": "43,895 USD",
+  "data_price": 43895
 },{
   "_id": {
     "$oid": "6261e6d42f2f376eabd2aee0"
@@ -69,7 +74,8 @@
   "ENGINE POWER": "100 kW",
   "BATTERY CAPACITY": "39.2 kWh",
   "m/kWh": "0.27 kWh",
-  "PRICE": "28,450 USD"
+  "PRICE": "28,450 USD",
+  "data_price": 28450
 },{
   "_id": {
     "$oid": "6261e6d62f2f376eabd2aee1"
@@ -81,7 +87,8 @@
   "ENGINE POWER": "101 kW",
   "BATTERY CAPACITY": "38.3 kWh",
   "m/kWh": "0.25 kWh",
-  "PRICE": "47,140 USD"
+  "PRICE": "47,140 USD",
+  "data_price": 47140
 },{
   "_id": {
     "$oid": "6261e6d72f2f376eabd2aee2"
@@ -93,7 +100,8 @@
   "ENGINE POWER": "81 kW",
   "BATTERY CAPACITY": "31.8 kWh",
   "m/kWh": "0.31 kWh",
-  "PRICE": "21,430 USD"
+  "PRICE": "21,430 USD",
+  "data_price": 21430
 },{
   "_id": {
     "$oid": "6261e6d92f2f376eabd2aee3"
@@ -105,7 +113,8 @@
   "ENGINE POWER": "150 kW",
   "BATTERY CAPACITY": "64 kWh",
   "m/kWh": "0.3 kWh",
-  "PRICE": "38,500 USD"
+  "PRICE": "38,500 USD",
+  "data_price": 38500
 },{
   "_id": {
     "$oid": "6261e6db2f2f376eabd2aee4"
@@ -117,7 +126,8 @@
   "ENGINE POWER": "135 kW",
   "BATTERY CAPACITY": "32.6 kWh",
   "m/kWh": "0.31 kWh",
-  "PRICE": "34,750 USD"
+  "PRICE": "34,750 USD",
+  "data_price": 34750
 },{
   "_id": {
     "$oid": "6261e6f92f2f376eabd2aee5"
@@ -129,7 +139,8 @@
   "ENGINE POWER": "110 kW",
   "BATTERY CAPACITY": "40 kWh",
   "m/kWh": "0.32 kWh",
-  "PRICE": "32,600 USD"
+  "PRICE": "32,600 USD",
+  "data_price": 32600
 },{
   "_id": {
     "$oid": "626272712f2f376eabd2aee6"
@@ -141,7 +152,8 @@
   "ENGINE POWER": "60 kW",
   "BATTERY CAPACITY": "22 kWh",
   "m/kWh": "0.38 kWh",
-  "PRICE": "25,500 USD"
+  "PRICE": "25,500 USD",
+  "data_price": 25500
 },{
   "_id": {
     "$oid": "62629a747858ea130968e7aa"
@@ -153,7 +165,8 @@
   "ENGINE POWER": "44 million horsepower",
   "BATTERY CAPACITY": "Rocket size kWh",
   "m/kWh": " Hypersonic kWh",
-  "PRICE": "69,900 USD"
+  "PRICE": "69,900 USD",
+  "data_price": 69900
 },{
   "_id": {
     "$oid": "62629acb7858ea130968e7ab"
@@ -165,7 +178,8 @@
   "ENGINE POWER": "150 kW",
   "BATTERY CAPACITY": "78 kWh",
   "m/kWh": "0.43 kWh",
-  "PRICE": "56,395 USD"
+  "PRICE": "56,395 USD",
+  "data_price": 56395
 },{
   "_id": {
     "$oid": "62629ad77858ea130968e7ac"
@@ -177,7 +191,8 @@
   "ENGINE POWER": "160 kW",
   "BATTERY CAPACITY": "93.4 kWh",
   "m/kWh": "0.5 kWh",
-  "PRICE": "187,610 UDS"
+  "PRICE": "187,610 UDS",
+  "data_price": 187610
 },{
   "_id": {
     "$oid": "62629ae17858ea130968e7ad"
@@ -189,7 +204,8 @@
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "78 kWh",
   "m/kWh": "0.37 kWh",
-  "PRICE": "63,000 USD"
+  "PRICE": "63,000 USD",
+  "data_price": 63000
 },{
   "_id": {
     "$oid": "62629ae77858ea130968e7ae"
@@ -201,7 +217,8 @@
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "80 kWh",
   "m/kWh": " 0.35 kWh",
-  "PRICE": "67,900 USD"
+  "PRICE": "67,900 USD",
+  "data_price": 67900
 },{
   "_id": {
     "$oid": "62629aed7858ea130968e7af"
@@ -213,7 +230,8 @@
   "ENGINE POWER": "147 kW",
   "BATTERY CAPACITY": "90 kWh",
   "m/kWh": " 0.44 kWh",
-  "PRICE": "69,500 USD"
+  "PRICE": "69,500 USD",
+  "data_price": 69500
 },{
   "_id": {
     "$oid": "62629af27858ea130968e7b0"
@@ -225,7 +243,8 @@
   "ENGINE POWER": "140 kW",
   "BATTERY CAPACITY": "95 kWh",
   "m/kWh": "0.46 kWh",
-  "PRICE": "81,800 USD"
+  "PRICE": "81,800 USD",
+  "data_price": 81800
 },{
   "_id": {
     "$oid": "62629af77858ea130968e7b1"
@@ -237,5 +256,6 @@
   "ENGINE POWER": "375 kW",
   "BATTERY CAPACITY": "100 kWh",
   "m/kWh": "0.43 kWh",
-  "PRICE": "99,990 USD"
+  "PRICE": "99,990 USD",
+  "data_price": 99990
 }]

@@ -100,7 +100,7 @@ main {
     background-color: transparent;
     background: none;
     border: none;
-    color: var(--p-green);
+    color: var(--p-yellow);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.1rem;
