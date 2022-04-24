@@ -9,7 +9,7 @@
   "ENGINE POWER": "61 kW",
   "BATTERY CAPACITY": "36.8 kWh",
   "m/kWh": 0.41,
-  "PRICE": "22,000 USD",
+  "PRICE": " 22,000 USD",
   "data_price": 22000
 },{
   "_id": {
@@ -204,7 +204,7 @@
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "78 kWh",
   "m/kWh": 0.37,
-  "PRICE": "63,000 USD",
+  "PRICE": " 63,000 USD",
   "data_price": 63000
 },{
   "_id": {
@@ -217,7 +217,7 @@
   "ENGINE POWER": "300 kW",
   "BATTERY CAPACITY": "80 kWh",
   "m/kWh": 0.35,
-  "PRICE": "67,900 USD",
+  "PRICE": " 67,900 USD",
   "data_price": 67900
 },{
   "_id": {
@@ -230,7 +230,7 @@
   "ENGINE POWER": "147 kW",
   "BATTERY CAPACITY": "90 kWh",
   "m/kWh": 0.44,
-  "PRICE": "69,500 USD",
+  "PRICE": " 69,500 USD",
   "data_price": 69500
 },{
   "_id": {
@@ -258,4 +258,56 @@
   "m/kWh": 0.43,
   "PRICE": "99,990 USD",
   "data_price": 99990
+},{
+  "_id": {
+    "$oid": "6265b60148cd98d14b35934c"
+  },
+  "img": "https://www.evspecifications.com/images/model/c61ca2/640/main.jpg",
+  "MODEL": "e-208 GT",
+  "MANUFACTURER": "Peugeot",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "100 kW",
+  "BATTERY CAPACITY": "50 kWh",
+  "m/kWh": 0.26,
+  "PRICE": " 40,475 USD",
+  "data_price": 40475
+},{
+  "_id": {
+    "$oid": "6265ba2b48cd98d14b35934e"
+  },
+  "img": "https://www.evspecifications.com/images/model/8c5dcc/640/main.jpg",
+  "MODEL": "Cooper SE Level III",
+  "MANUFACTURER": "Mini",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "135 kW",
+  "BATTERY CAPACITY": "32.6 kWh",
+  "m/kWh": 0.24,
+  "PRICE": "37,750 USD",
+  "data_price": 37750
+},{
+  "_id": {
+    "$oid": "6265bc2348cd98d14b35934f"
+  },
+  "img": "https://www.evspecifications.com/images/model/26b9f8/640/main.jpg",
+  "MODEL": "E Advanced",
+  "MANUFACTURER": "Honda",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "113 kW",
+  "BATTERY CAPACITY": "25.5 kWh",
+  "m/kWh": 0.23,
+  "PRICE": "50,031 USD",
+  "data_price": 50031
+},{
+  "_id": {
+    "$oid": "6265be8748cd98d14b359350"
+  },
+  "img": "https://www.evspecifications.com/images/model/e95dbc/640/main.jpg",
+  "MODEL": "ID.3 Pure",
+  "MANUFACTURER": "Volkswagen",
+  "VEHICLE CLASS": "Compact",
+  "ENGINE POWER": "93 kWh",
+  "BATTERY CAPACITY": "45",
+  "m/kWh": 0.24,
+  "PRICE": "29,566 USD",
+  "data_price": 29566
 }]
