@@ -54,17 +54,17 @@ function displaySearchResults(resultsList) {
     display.innerHTML = ""
     for (const car of resultsList) {
         display.innerHTML += `
-        <div class="card car-display-card">
-            <div class="card-header">
+        <div class="card car-display-card quiz-results-bg">
+            <div class="card-header quiz-results-header">
               <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
             </div>
             <div class="card-body py-5">
               <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
-              <h5>Specification</h5>
+              <h5>$${car['PRICE']}</h5>
               <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
               <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
-              <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
-              <p class="mb-0">Price - $${car['PRICE']}</p>
+              <p class="mb-0">Miles Per Kwh - ${car['m/kWh']}</p>
+              
             </div>
         </div>
         `

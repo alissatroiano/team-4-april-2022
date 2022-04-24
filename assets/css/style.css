@@ -272,6 +272,14 @@ p.lead {
     color: var(--bg-gray-1)!important;
 }
 
+.quiz-results-header {
+    background-color: #cddbc2!important;   
+}
+
+.quiz-results-bg {
+    border: 10px solid #cddbc28a!important;
+}
+
 
 /* Footer */
 footer {
