@@ -140,6 +140,20 @@ In addition to the Navbar features the footer displays:
 10. Observe validator's outpit, "Document checking completed. No errors or warnings to show"
 11. Mark test "passed"
 
+### HTML Test 3: Team.html
+1. Visit [W3C Validator](https://validator.w3.org/)
+2. Paste the contents of `team.html` into the tool to check input 
+3. Click "check"
+4. Observe the following **error**: "Attribute target not allowed on element i at this point"
+5. Visit `team.html` in local IDE
+6. Move the target attribute to its' corresponding `<a></a>` element
+7. Observe the following **error**: "Duplicate ID"
+8. Visit `team.html` and observe that all team cards are using the same ID
+9. Create new ID names for all div elements effected by this error
+10. Visit `style.css` and style all new ID's accordingly
+11. Repeat steps 1-3
+12. Mark test "passed"
+
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser
 2. Click on the CTA button to visit the calculator tool

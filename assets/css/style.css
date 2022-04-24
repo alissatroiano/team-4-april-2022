@@ -314,16 +314,26 @@ a.link-secondary:hover {
     font-size: smaller;
 }
 
-#team-card {
+#team-card,
+#team-card-1,
+#team-card-2,
+#team-card-3,
+#team-card-4,
+#team-card-5 {
     border: 0;
     width: 12rem;
     margin-top: 25px;
+
 }
 
-#team-card img {
+#team-card img,
+#team-card-1 img,
+#team-card-2 img,
+#team-card-3 img,
+#team-card-4 img,
+#team-card-5 img  {
     border-radius: 5rem;
     width: 10rem;
-
 }
 
 #footer-copyright {
