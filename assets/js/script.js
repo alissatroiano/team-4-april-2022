@@ -48,6 +48,8 @@ function displaySearchResults(resultsList) {
         }
         // for all the items in the results, display thier info on screen
         for (const car of resultsList) {
+            carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh'])
+            savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings} a year with this EV!</p>`
             display.innerHTML += `
             <div class="card car-display-card">
                 <div class="card-header">
@@ -60,6 +62,7 @@ function displaySearchResults(resultsList) {
                     <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
                     <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
                     <p class="mb-0">Price - $${car['PRICE']}</p>
+                    ${carFuelSavings > 0 ?  savingStatement : ""}
                 </div>
             </div>
             `
@@ -88,7 +91,7 @@ function searchButtonClick() {
         alert("please select your car budget above")
         return false;
     } else {
-        // collect data from the local database
+        // collect data from the local database https://alissatroiano.github.io/team-4-april-2022/electric.json
         fetch("https://alissatroiano.github.io/team-4-april-2022/electric.json")
         .then(
             response => response.json()
