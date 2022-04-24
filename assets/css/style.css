@@ -92,16 +92,31 @@ main {
     text-transform: uppercase;
 }
 
+.text-green,
 .btn-none {
     font-family: 'futura-pt', sans-serif;
     background-color: transparent;
     background: none;
     border: none;
-    color: var(--p-yellow);
+    color: var(--p-green);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 1.1rem;
     font-weight: 600;
+}
+
+.text-blue {
+    font-family: 'futura-pt', sans-serif;
+    color: #4b5887;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.text-bold {
+    font-weight: 600;
+    font-family: 'futura-pt', sans-serif;
 }
 
 /*-------------- Navbar */
@@ -215,6 +230,7 @@ p.lead {
 
 .text-muted.text-small {
     font-family: 'futura-pt', sans-serif;
+
 }
 /* Footer */
 footer {
