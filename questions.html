@@ -30,11 +30,14 @@
 
   <!--section for questions-->
   <main>
-    <section class="questions container" id="question-section">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center my-3">EValuator</h1>
-          <p class="px-3 text-center">For a more accurate savings calulation, please input the data requested below</p>
+    <section class="container">
+      <div class="row mt-3">
+        <div class="col-md-12 text-center">
+          <h1 class="display-4 mb-3 my-3 md-md-4">Evaluator</h1>
+          <p class="mx-3 mx-md-5 py-2 py-md-3">Use our groundbreaking EV/Fuel calculator to learn how much money you can save while
+            protecting the planet.
+          </p>
+          <hr>
         </div>
       </div>
       <div class="row mt-3">
@@ -79,17 +82,91 @@
       </div>
       <div class="row d-block d-md-flex align-items-center justify-content-center px-3 px-md-4">
         <div class="col-12 col-md-6 text-center text-lg-start">
-          <button class="btn btn-main btn-lg btn-block mt-5" onclick="calculateFuelSavings()">Calculate</button>
-          <div class="my-3" id="result-display"></div>
+          <button class="btn btn-main btn-lg btn-block mt-5" onclick="calculateFuelSavings()" type="button" data-bs-toggle="modal" data-bs-target="#calculateFuelSavings" aria-expanded="false" aria-controls="calculateFuelSavings">Calculate</button>
         </div>
         <div class="col-12 col-md-6 text-center text-lg-end mb-3">
-          <button class="btn btn-main btn-lg mt-5" type="button" data-bs-toggle="modal"
+          <!-- <button class="btn btn-main btn-lg mt-5" type="button" data-bs-toggle="modal"
             data-bs-target="#calculatorExplanation" aria-expanded="false" aria-controls="calculatorExplanation">
             Our Process
-          </button>
+          </button> -->
         </div>
       </div>
-    </section>
+    </section>  
+
+    <section class="container questions-container p-3">
+        <!-- Use JavaScript to manipulate HTML in the placement section code below -->
+        <div class="row mt-3 mt-md-4 car-size-question px-5">
+          <div class="col-12">
+            <h5 class="question-header mb-3 mb-md-4">Which size of car would you like?</h5>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3">
+            <div class="card" id="Compact" onclick="selectCarSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title text-center"> Compact </h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x text-center"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3 my-3">
+            <div class="card" id="Med" onclick="selectCarSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title text-center">Mid-Size</h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3">
+            <div class="card" id="SUV" onclick="selectCarSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title">SUV</h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Budget question -->
+        <div class="row budget-question mb-5 px-5 mt-3">
+          <div class="col-12">
+            <h5 class="question-header mb-3 mb-md-4">What is your budget?</h5>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3">
+            <div class="card " id="Under30" onclick="selectBudgetSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title">Under $30,000</h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3">
+            <div class="card " id="30To50" onclick="selectBudgetSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title">$30,000 - $50,000</h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-8 col-sm-4 my-3">
+            <div class="card " id="Over50" onclick="selectBudgetSize(this.id)">
+              <div class="card-header">
+                <h5 class="card-title">Over $50,000</h5>
+              </div>
+              <div class="card-body py-5">
+                <i class="fas fa-car fa-3x"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+</section>
   </main>
 
 
@@ -98,38 +175,37 @@
 
   <!--modal for calculator explanation-->
   <!-- Modal -->
-  <div class="modal fade" id="calculatorExplanation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade w-100" id="calculateFuelSavings" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">How We Got These Numbers</h5>
+          <h5 class="modal-title" id="staticBackdropLabel">YOU COULD BE SAVING</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
         </div>
-
         <div class="modal-body">
-          <p class="mb-0">This calculator compares the cost of charging an electric car compared to fueling a
-            Internal Combusting Engine</p>
-          <p>These values will change if you add information into the Additional Options tab to enable you to have a
-            more personalised savings calculation</p>
-        </div>
-        <div class="modal-footer">
-          <div class="row">
-            <h6>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h6>
+          <div id="result-display"></div>
+          </div>
+        <div class="modal-footer d-block mx-auto">
+            <button class="btn-none mt-2  text-center" type="button" data-bs-toggle="collapse"
+            data-bs-target="#calculatorExplanation" aria-expanded="false" aria-controls="calculatorExplanation">
+            How Are We Calculating this?
+        </button>
+        <div class="collapse" id="calculatorExplanation">
+            <p id="modal-desc">This calculator compares the cost of charging an electric car compared to fueling a
+              Internal Combusting Engine. These values will change if you add information into the Additional Options tab to enable you to have a
+              more personalised savings calculation</p>
+            <h5>To calculate these savings we are taking the average (as of 04/21/2022) across the USA for:</h5>
             <ul class="list-group list-unstyled">
-              <li> Gass Prices </li>
-              <li> Household Electricity Cost per kWh</li>
-              <li> Car MPG </li>
-              <li> Car Mileage </li>
+              <li><span class="text-muted text-small">Gas Prices</span></li>
+              <li><span class="text-muted text-small"> Household Electricity Cost per kWh</span></li>
+              <li> <span class="text-muted text-small">Car MPG </span></li>
+              <li> <span class="text-muted text-small">Car Mileage </span></li>
             </ul>
-          </div>
-          <div class="row">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          </div>
+        </div>
+            </div>
         </div>
       </div>
-    </div>
   </div>
 
   <!-- Local Script Links -->
