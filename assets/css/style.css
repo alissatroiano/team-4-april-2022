@@ -58,6 +58,10 @@ main {
     border: none!important;
 }
 
+.card-header:first-child {
+    border-radius: 0!important;
+}
+
 /*--------------- Custom Classes */
 .font-dark {
     color: var(--p-blue-1);
