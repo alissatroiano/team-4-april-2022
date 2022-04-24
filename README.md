@@ -1,4 +1,4 @@
-# **Electrillo**
+# **ELECTRILLO**
 
 ![Live Project Representation Image](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/responsivePage.png?raw=true)
 
@@ -17,22 +17,30 @@
 
 ## Introduction
 
-With climate change becoming a increasing urgent problem in our lives, [vehicle numbers globally now at an estimated 1.446 billion](https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world/) and [80% of lung diseases being caused by car pollution](https://study.com/academy/lesson/car-pollution-facts-lesson-for-kids.html#:~:text=Car%20engines%20release%20poisonous%20gases,a%20result%20of%20car%20pollution.) there is a no better time to start looking for more eco-friedly vehicles for the planets health and our own. Electic Vehicles (EVs) and Hybrid Vehicles are improving rapidly and if more people moved to the alternatives then maufactures would be motivated to put more money and emphasis into development of these vehicles. With [One-fifth of Europe's greenhouse gases coming from the transportation sector alone](https://www.virta.global/blog/electric-cars-pollution-facts), this is a massive market which could play a major part in our planets future.
+With climate change becoming a increasing urgent problem in our lives, [vehicle numbers globally now at an estimated 1.446 billion](https://hedgescompany.com/blog/2021/06/how-many-cars-are-there-in-the-world/) and [80% of lung diseases being caused by car pollution](https://study.com/academy/lesson/car-pollution-facts-lesson-for-kids.html#:~:text=Car%20engines%20release%20poisonous%20gases,a%20result%20of%20car%20pollution.) there is a no better time to start looking for more eco-friedly vehicles for the planets health and our own. 
+<br> Electic Vehicles (EVs) and Hybrid Vehicles are improving rapidly and if more people moved to the alternatives then maufactures would be motivated to put more money and emphasis into development of these vehicles. With [One-fifth of Europe's greenhouse gases coming from the transportation sector alone](https://www.virta.global/blog/electric-cars-pollution-facts), this is a massive market which could play a major part in our planets future.
 
 
 To help educate and encourage the everyday motorist to consider moving to an alternativly fueled vehicle, we have created a website that easily provides the user with more eco-friendly alternatives to the type of vehicle they are looking for. The website also provides more information about the problems and threats caused by ICEs and what the benefits of making a change could be, for the enviroment and the motorist.
 
-This project has been build as part of Code Institutes Earth Day Hackathon Event April 2022 by TEAM_4.
+This project has been build as part of Code Institutes Earth Day Hackathon Event April 2022 by the team Mother Nature's Minions.
 
 ## UX
 
 ![wireframes](“docs/wireframes/wireframes.pdf”)
 
 ### **Project Goals**
-
-### **Business Goals**
+- Educate the user about the danger of climate change
+- Show the 
+- Educate the user about the options available to avoid pollution
+- Give environment friendly options following the user choices
 
 ### **User Demographic**
+- Age 16 to 60
+- All genders and ethnicities
+- Climate change conscious users
+- Users with an interest in learning more about the climate issue
+- Cars enthusiasts
 
 ### **Value for the User**
 
@@ -55,14 +63,10 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 
 ### **Production Feature Planning Table**
 
-| ID | Feature                                                                                          | Importance | Viability |
-|----|--------------------------------------------------------------------------------------------------|------------|-----------|
-|  |      |         |        |
+![tradeoff](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/tradeoff.png?raw=true)
 
 
 ## **STRUCTURE**
-
-## Topology
 
 ## Database Schema
 The Database has been created with [MongoDB](https://www.mongodb.com/) and exported as Json file: <br>
@@ -77,6 +81,7 @@ The Database has been created with [MongoDB](https://www.mongodb.com/) and expor
 While working on the project we had to execute the following alterations:
 
 |Page/Section |Alteration |Reason |
+| --- | --- | --- |
 |Home Page|Removed the team section from the Home Page|It is a priority to display the mission of the website and define a stronger identity|
 |Home Page|Removed the Car Search feature|In order to deliver are more clean website we moved the feature to a different page|
 |Evaluation Page|Moved the Calculator up|The Calculator is the core feature of the page so it needs to be displayed first|
@@ -90,12 +95,14 @@ While working on the project we had to execute the following alterations:
 ### **Multi Page Elements**
 
 **Navbar**
+
 - Logo: To display the website identity and act as home button
 - Mission: Links to the mission behind the project
 - Evaluator: Links to the core features of the website
 - Team: Links to a presentation of the team with contacts options
 
 **Footer**
+
 In addition to the Navbar features the footer displays:
 - Social links to informative websites and the project repository
 
@@ -104,15 +111,18 @@ In addition to the Navbar features the footer displays:
 - Direct link to the Evaluator page
 
 ### **Evaluator Page**
-- An EV/Fuel Calculator that will display, in a pop-up window, the advantages on choosing an electric car.
-- A mini-questionnaire to suggest to the user some options within their budget and preferred car size.
+- An EV/Fuel Calculator that will display, in a pop-up window, the advantages on choosing an electric ca
+- A mini-questionnaire to suggest to the user some options within their budget and preferred car size
 
 ### **Team Page**
-- Cards of each team member, implemented with links to their LinkedIn and Github pages.
+- Cards of each team member, implemented with links to their LinkedIn and Github pages
 
 ### **Features for Future Releases**
-- A wider list of cars to suggest in the mini-questionnaire
 - Implement more currencies and different units of measurements for the EV/Fuel Calculator
+- Add a carbon emission calculator
+- Add users car details to make savings and carbon emissions more accurate
+- More Options button displays more cars from their one result
+- Add link to buy the car
 
 ## **TESTING**
 
@@ -246,21 +256,27 @@ In addition to the Navbar features the footer displays:
 
 ## **CREDITS**
 
-### **Code snippets**
-
 ### **Resources**
-- [EvSpecifications](https://www.evspecifications.com/) 
-    Source for the data of the cars 
-- [kWh Calculator](https://www.inchcalculator.com/convert/kilowatt-hour-per-hundred-kilometers-to-mile-per-kilowatt-hour/)
-    Calculator to verify the mi/kWh
+- [Ev Specifications](https://www.evspecifications.com/) - Source for the data of the cars 
+- [kWh Calculator](https://www.inchcalculator.com/convert/kilowatt-hour-per-hundred-kilometers-to-mile-per-kilowatt-hour/) - Calculator to verify the kWh/mi
+- [Eco Cost Savings](https://ecocostsavings.com/electric-car-kwh-per-mile-list/) - Reference for most of the car kWh/mi
 
 ### **Content**
 - [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
 
 ### **Media**
+- [EvSpecifications](https://www.evspecifications.com/) - Source for the images of the cars in the database
+
 - [EvSpecifications](https://www.evspecifications.com/) 
     Source for the images of the cars in the database
-  
+
 - [Pixabay](https://pixabay.com/illustrations/faulty-break-down-car-4693238/)
 
 ### **Acknowledgements**
+
+The team includes: 
+- [Nick Lennon](https://github.com/nlenno1)
+- [Alissa Troiano](https://github.com/alissatroiano)
+- [Darlyn Norlay](https://github.com/Darlyn-Lurikah)
+- [Claudia Lai](https://github.com/ClaudiaLie)
+- [Ashley Rolfe](https://github.com/wierdlygoodcoder)
