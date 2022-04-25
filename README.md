@@ -10,9 +10,21 @@
   - [Introduction](#introduction)
 - [UX](#ux)
   - [Project Goals](#project-goals)
+  - [User Demographic](#user-demographic)
+  - [Value for The User](#value-for-the-user)
 - [User Stories](#user-stories)
-  - [Scope](#scope)
+- [Scope](#scope)
+  - [Feature Planning](#feature-planning)
+- [Structure](#structure)
+- [Database Schema](#database-schema)
+- [Skeleton](#skeleton)
+- [Wireframes](#wireframes)
+- [Design Alterations](#design-alterations)
+- [Features](#features)
 - [Testing](#testing)
+- [Deployment](#deployment)
+- [Credits](#credits)
+- [Technology Used](#technology-used)
 - [Credits](#credits)
 
 ## Introduction
@@ -27,8 +39,6 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 
 ## UX
 
-[wireframes](“docs/wireframes/wireframes.pdf”)
-
 ### **Project Goals**
 - Educate the user about the danger of climate change
 - Show the 
@@ -36,9 +46,8 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 - Give environment friendly options following the user choices
 
 ### **User Demographic**
-- Age 16 to 60
+- Men and women ages 35 to 65 that want to save money and are willing to learn more about environmentalism and possess these qualities:
 - All genders and ethnicities
-- Climate change conscious users
 - Users with an interest in learning more about the climate issue
 - Cars enthusiasts
 
@@ -61,18 +70,16 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 
 ## **SCOPE**
 
-### **Production Feature Planning Table**
+### **Feature Planning**
 
 ![tradeoff](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/tradeoff.png?raw=true)
 
 
 ## **STRUCTURE**
 
-## Database Schema
+### Database Schema
 The Database has been created with [MongoDB](https://www.mongodb.com/) and exported as Json file: <br>
 ![database](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/firstDBschema.png?raw=true)
-
-## **SKELETON**
 
 ### **Wireframes**
 [Link to the Wireframes](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/wireframes/wireframes.md)
@@ -265,6 +272,25 @@ In addition to the Navbar features the footer displays:
 - Fuel Input Validates for every car search result calculation if input is Invalid which could lead to multiple alerts if there is multiple results.
 
 ## **DEPLOYMENT**
+
+This project was deployed with [Github Pages](https://pages.github.com/). To see the deployed version, visit [Electrillo](https://alissatroiano.github.io/team-4-april-2022/)
+
+Our development team deployed the project successfully by following these steps:
+
+1. Visit "repository settings" on GitHub
+2. Scroll to the GitHub Pages section and click, "source".
+3. Select the 'main' branch for deployment.
+4. Open browser and go [here](https://alissatroiano.github.io/team-4-april-2022/) to ensure deployment was successful.
+
+### To run this project locally
+
+1. Follow [this link](https://github.com/alissatroiano/team-4-hackathon) to the project's GitHub Repository.
+2. Click the green button labeled, 'Clone or download.'
+3. Copy the provided URL.
+4. Open your local Integrated Development Environment.
+5. Type the command, `git clone`.
+6. Paste [this URL](https://github.com/alissatroiano/team-4-hackathon) that was copied from GitHub earlier.
+7. Enter `python3 -m http.server` to start the server.
 
 ## **TECHNOLOGY USED**
 
