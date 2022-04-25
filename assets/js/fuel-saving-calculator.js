@@ -92,7 +92,7 @@ function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
     // Store variables from page
     let mileage = document.getElementById("mileageValue").innerHTML;
     if (mileage == "Unselected") {
-        mileage = 30000;
+        mileage = 14263;
     }
     
     // Calculate the difference in yearly cost
