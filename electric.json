@@ -87,8 +87,8 @@
   "ENGINE POWER": "101 kW",
   "BATTERY CAPACITY": "38.3 kWh",
   "m/kWh": 0.25,
-  "PRICE": "47,140 USD",
-  "data_price": 47140
+  "PRICE": "29,557 USD",
+  "data_price": 29557
 },{
   "_id": {
     "$oid": "6261e6d72f2f376eabd2aee2"
