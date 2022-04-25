@@ -246,12 +246,27 @@ In addition to the Navbar features the footer displays:
 8. Repeat steps 1 - 3
 9. Mark test, "passed"
 
+### Google Lighthouse Test
+1. Visit the project in the browser
+2. Press F12 to open the developer tools
+3. Click on 'Lighthouse' in the developer tools
+4. Click 'Run Audit'
+5. Observe the SEO, Performance, and Accessibility scores are all above 90, with no errors
+6. Refactor the code to make it more readable
+7. Resize the image on the landing page to improve the performance score
+8. Set a "width" and "height" attribute on the image to improve the performance score
+9. Observe the performance score is now 100%
+10. Read the notes about SEO
+11. Refactor until the SEO score reaches 100%
+12. Read the notes about Accessibility
+13. Make suggested changes until the Accessibility score reaches 100%
+14. Mark test, "passed"
+
 | **Bug ID** | **Description of Bug** | **Problem** | **Fix/Solution** |
 |||||
 |||||
 |||||
 |||||
-
 
 
 ### **Known Limitations**
