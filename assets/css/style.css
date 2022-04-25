@@ -145,7 +145,6 @@ main {
     font-weight: 450;
     padding: 15px;
     color: var(--p-blue-1);
-    
 }
 
 .navbar-brand {
@@ -182,8 +181,11 @@ img {
     background-color:var(--s-green-3)!important;
 }
 
-p.mission-statement {
-    margin: 20px 30px;
+h2.mission-statement {
+    font-family: 'futura-pt', sans-serif;
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+    border: none;
 }
 
 #down {
