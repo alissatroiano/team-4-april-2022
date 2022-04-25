@@ -56,6 +56,10 @@ main {
     border: none!important;
 }
 
+.card-header:first-child {
+    border-radius: 0!important;
+}
+
 /*--------------- Custom Classes */
 .section-heading {
     font-family: 'Oswald', sans-serif;
@@ -175,7 +179,7 @@ img {
 }
 
 .mission-bg {
-    background-color:var(--s-blue-2)!important;
+    background-color:var(--s-green-3)!important;
 }
 
 p.mission-statement {
@@ -256,8 +260,6 @@ p.lead {
 .quiz-icon {
     color: #79C1CC!important;
 }
-
-
 
 .calculator-card {
     background-color:var(--s-blue-2)!important;

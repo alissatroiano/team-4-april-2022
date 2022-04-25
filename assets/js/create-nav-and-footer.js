@@ -19,7 +19,7 @@ function createNavbar () {
               <a class="nav-link font-dark" href="index.html#mission">Mission</a>
             </li>
             <li class="nav-item" id="cta-nav">
-            <a class="nav-link" href="questions.html">EValuator</a>
+            <a class="nav-link" href="questions.html">Evaluator</a>
           </li>
             <li class="nav-item">
               <a class="nav-link" href="team.html">Team</a>
@@ -45,7 +45,7 @@ function createFooter () {
           <li class="ms-3 p-1"><a class="link-secondary" href="index.html">Home</a></li>
           <li class="ms-3 p-1"><a class="link-secondary" href="index.html#mission">Mission</a></li>
           <li class="ms-3 p-1"><a class="link-secondary" href="team.html">Team</a></li>
-          <li class="ms-3 p-1" id="footer-cta"><a class="footer-link link-light" href="questions.html">EValutor</a></li>
+          <li class="ms-3 p-1" id="footer-cta"><a class="footer-link link-light" href="questions.html">Evaluator</a></li>
         </ul>
       </div>
       <div class="col-xs-8 col-sm-4 justify-content-center d-flex">
