@@ -437,3 +437,17 @@ a.link-secondary:hover {
         height: auto;
     }
 }
+
+/* Range Input Styling */
+
+.custom-range::-webkit-slider-thumb {
+    background: gray !important;
+}
+
+.custom-range::-moz-range-thumb {
+    background: gray !important;
+}
+
+.custom-range::-ms-thumb {
+    background: gray !important;
+}

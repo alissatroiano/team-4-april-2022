@@ -24,7 +24,7 @@ function clearMPGSelection() {
 
 function clearMileageSelection() {
     mileageSliderValue.innerHTML = "Unselected"; // Reset Mileage selection
-    mileageSlider.value = 45000;
+    mileageSlider.value = 41000;
 }
 
 function validateMPGInput(value) {
@@ -38,7 +38,7 @@ document.getElementById("customFuelPrice").oninput = function()  {
     errorDisplay = document.getElementById("mpgValidatorErrorMessage");
     if (validateMPGInput(value) == false){
         this.style.color = "red";
-        errorDisplay.innerHTML = "Please enter a a price with a max of 4 numbers and 2 decimal places";
+        errorDisplay.innerHTML = "Please enter a price with a maximum of 3 numbers before the decimal point and up to 2 decimal places";
     } else {
         this.style.color = "initial";
         errorDisplay.innerHTML = "&nbsp";
@@ -52,9 +52,9 @@ function displayCalculationResults(savingAmount) {
     <div class="row">
         <div class="col-12">
             <p class="mb-0">By Choosing an Electric Vehicle you could save up to</p>
-            <p class="display-3">$${savingAmount} a year</p>
+            <p class="display-3">$${savingAmount.toLocaleString()} a year</p>
             <p class="mb-0">Over the Life Cycle of a battery*, the savings could reach</p>
-            <p class="display-3">$${savingAmount*8}</p>
+            <p class="display-3">$${(savingAmount*8).toLocaleString()}</p>
             <p class="small text-muted">*Life cycle of a battery is approx. 8 years</p>
         </div>
     </div>
@@ -71,8 +71,7 @@ function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
             fuelPrice = customFuelPrice.value;
         } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
-            alert("Please enter a valid input for Fuel Price");
-            return False;
+            alert("Please enter a valid input for Fuel Price. The calculator will use the default average fuel price for this calculation");
         }
     }
     // Check if custom vehicle MPG is supplied
@@ -93,7 +92,7 @@ function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
     // Store variables from page
     let mileage = document.getElementById("mileageValue").innerHTML;
     if (mileage == "Unselected") {
-        mileage = 30000;
+        mileage = 14263;
     }
     
     // Calculate the difference in yearly cost
