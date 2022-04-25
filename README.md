@@ -17,7 +17,6 @@
   - [Feature Planning](#feature-planning)
 - [Structure](#structure)
 - [Database Schema](#database-schema)
-- [Skeleton](#skeleton)
 - [Wireframes](#wireframes)
 - [Design Alterations](#design-alterations)
 - [Features](#features)
