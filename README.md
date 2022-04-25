@@ -174,7 +174,6 @@ In addition to the Navbar features the footer displays:
 7. Repeat steps 1-3 until there are no errors
 8. Mark test "passed"
 
-
 ### CSS Jigsaw Validator Test
 1. Visit W3C Jigsaw validator in the browser
 2. Copy all properties from `style.css`
@@ -186,7 +185,6 @@ In addition to the Navbar features the footer displays:
 8. Repeat steps 1-4
 9. Observe all tests are now passing
 10. Mark test, "passed"
-
 
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser
