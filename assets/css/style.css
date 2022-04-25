@@ -244,6 +244,10 @@ p.lead {
     border-top: 0!important;
 }
 
+.modal-content {
+    border: 10px solid #cddbc2!important;
+}
+
 .text-muted.text-small {
     font-family: 'futura-pt', sans-serif;
 
