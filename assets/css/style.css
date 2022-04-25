@@ -240,6 +240,10 @@ p.lead {
     color: #4b5887;
 }
 
+.modal-footer {
+    border-top: 0!important;
+}
+
 .text-muted.text-small {
     font-family: 'futura-pt', sans-serif;
 
