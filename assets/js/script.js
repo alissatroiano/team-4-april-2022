@@ -51,7 +51,7 @@ function displaySearchResults(resultsList) {
             carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh']);
             savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings} a year with this EV!</p>`;
             display.innerHTML += `
-            <div class="card car-display-card quiz-results-bg">
+            <div class="card car-display-card quiz-results-bg mt-3">
                 <div class="card-header quiz-results-header">
                     <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
                 </div>
