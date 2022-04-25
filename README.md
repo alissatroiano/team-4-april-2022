@@ -27,7 +27,7 @@ This project has been build as part of Code Institutes Earth Day Hackathon Event
 
 ## UX
 
-![wireframes](“docs/wireframes/wireframes.pdf”)
+[wireframes](“docs/wireframes/wireframes.pdf”)
 
 ### **Project Goals**
 - Educate the user about the danger of climate change
