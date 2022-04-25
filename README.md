@@ -24,6 +24,7 @@
 - [Deployment](#deployment)
 - [Technology Used](#technology-used)
 - [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
