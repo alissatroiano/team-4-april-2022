@@ -314,16 +314,26 @@ a.link-secondary:hover {
     font-size: smaller;
 }
 
-#team-card {
+#team-card,
+#team-card-1,
+#team-card-2,
+#team-card-3,
+#team-card-4,
+#team-card-5 {
     border: 0;
     width: 12rem;
     margin-top: 25px;
+
 }
 
-#team-card img {
+#team-card img,
+#team-card-1 img,
+#team-card-2 img,
+#team-card-3 img,
+#team-card-4 img,
+#team-card-5 img  {
     border-radius: 5rem;
     width: 10rem;
-
 }
 
 #footer-copyright {
@@ -351,6 +361,7 @@ a.link-secondary:hover {
     position: relative;
 }
 
+#error, #error2,
 .err {
     font-family: 'futura-pt', sans-serif;
     color: var(--p-yellow);
@@ -396,7 +407,7 @@ a.link-secondary:hover {
 }
 
 /* Portrait and Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 768px) {
     .jumbotron {
         max-width: 100%;
         margin: 0 auto;
@@ -405,6 +416,5 @@ a.link-secondary:hover {
         max-width: 100%;
         min-height: 100%;
         height: auto;
-        margin-bottom: 50px;
     }
 }

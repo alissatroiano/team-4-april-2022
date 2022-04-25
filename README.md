@@ -134,7 +134,7 @@ In addition to the Navbar features the footer displays:
 5. Notice there is a stray `</p>` tag on like 36
 6. Open IDE and visit `index.html`
 7. Remove the stray element
-8. Repeat steps 1-3
+8. Repeat steps 1-3 until there are no errors
 9. Mark test "passed"
 
 ### HTML Test 2: Questions.html
@@ -146,9 +146,47 @@ In addition to the Navbar features the footer displays:
 6. Observe that there is an error in the font awesome CDN link
 7. Conclude that error most likely occurred while merging or formatting the code
 8. Replace with correct CDN link
-9. Repeat steps 1-3
+9.  Repeat steps 1-3 until there are no errors
 10. Observe validator's outpit, "Document checking completed. No errors or warnings to show"
 11. Mark test "passed"
+
+### HTML Test 3: Team.html
+1. Visit [W3C Validator](https://validator.w3.org/)
+2. Paste the contents of `team.html` into the tool to check input 
+3. Click "check"
+4. Observe the following **error**: "Attribute target not allowed on element i at this point"
+5. Visit `team.html` in local IDE
+6. Move the target attribute to its' corresponding `<a></a>` element
+7. Observe the following **error**: "Duplicate ID"
+8. Visit `team.html` and observe that all team cards are using the same ID
+9. Create new ID names for all div elements effected by this error
+10. Visit `style.css` and style all new ID's accordingly
+11.  Repeat steps 1-3 until there are no errors
+12. Mark test "passed"
+
+### HTML Test 4: 404.html
+1. Visit [W3C Validator](https://validator.w3.org/)
+2. Paste the contents of `404.html` into the tool to check input 
+3. Click "check"
+4. Observe the following **warning**: "Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed."
+5. Visit `404.html` in IDE
+6. Replace `div` with `h2`
+7. Repeat steps 1-3 until there are no errors
+8. Mark test "passed"
+
+
+### CSS Jigsaw Validator Test
+1. Visit W3C Jigsaw validator in the browser
+2. Copy all properties from `style.css`
+3. Paste the contents of `style.css` in the validator tool
+4. Click, "Check"
+5. Observe an error coming from line 410
+6. Notice the media query definition is outdated
+7. Revise
+8. Repeat steps 1-4
+9. Observe all tests are now passing
+10. Mark test, "passed"
+
 
 ### JS Test 1: On Click/Select CSS Effect
 1. Visit the project in the browser
@@ -183,13 +221,38 @@ In addition to the Navbar features the footer displays:
 3. Scroll down to search for a vehicle
 4. Click on a choice for each question
 5. Click, "Search"
+6. Observe that clicking the "Search" button returns nothing on the front-end
+7. Open up the JS console
+8. Observe a 404 error, stating that the JSON file can not be found by the server
+9. Consult with team
+10. Have team member refactor and troubleshoot
+11. Observe that the error during production resulted from the use of a file path in the fetch statement
+12. Replace the file path with a URL
+13. Commit, push and deploy changes
+14. Repeat steps 1-5
+15. Observe that the search functionality has been repaired and search results are now printing on the front end.
+16. Open the JavaScript console
+17. Observe that there are no longer any errors
+18. Mark test, "passed"
 
+### JS Test 4: JSHint Test
+1. Copy the contents of `script.js`
+2. Visit [JSHint](https://jshint.com/)
+3. Paste the contents of `script.js` into the JavaScript validator
+4. Observe the **warnings**
+5. Add semicolons wherever they are missing
+6. Notice the remaining warnings suggest dot notation
+7. Observe there are no errors with the JavaScript
+8. Repeat steps 1 - 3
+9. Mark test, "passed"
 
 | **Bug ID** | **Description of Bug** | **Problem** | **Fix/Solution** |
 |||||
 |||||
 |||||
 |||||
+
+
 
 ### **Known Limitations**
 
@@ -263,6 +326,8 @@ In addition to the Navbar features the footer displays:
 
 ### **Content**
 - [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+  
+- The [404 Error Page](404.html) was copied from [FreeFrontEnd](https://freefrontend.com/html-css-404-page-templates/)
 
 ### **Media**
 - [EvSpecifications](https://www.evspecifications.com/) - Source for the images of the cars in the database
@@ -271,6 +336,10 @@ In addition to the Navbar features the footer displays:
     Source for the images of the cars in the database
 
 - [Pixabay](https://pixabay.com/illustrations/faulty-break-down-car-4693238/)
+
+- The illustration on the landing page was copied from [iStockPhoto](https://www.istockphoto.com/illustrations)
+
+- The favicon image was copied from [FreeSVG](https://freesvg.org/lightning-symbol-vector-image)
 
 ### **Acknowledgements**
 
