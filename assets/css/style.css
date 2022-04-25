@@ -321,12 +321,16 @@ a.link-secondary:hover {
 }
 
 /* Team page */
+.team-row {
+    margin-top: 4rem !important;
+}
+
 .card-body i {
     padding: 2px;
 }
 
 .team-text-small {
-    font-size: smaller;
+    font-size: 15px;
 }
 
 #team-card,
