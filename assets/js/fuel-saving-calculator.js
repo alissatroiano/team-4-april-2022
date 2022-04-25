@@ -38,7 +38,7 @@ document.getElementById("customFuelPrice").oninput = function()  {
     errorDisplay = document.getElementById("mpgValidatorErrorMessage");
     if (validateMPGInput(value) == false){
         this.style.color = "red";
-        errorDisplay.innerHTML = "Please enter a a price with a max of 4 numbers and 2 decimal places";
+        errorDisplay.innerHTML = "Please enter a price with a maximum of 3 numbers before the decimal point and up to 2 decimal places";
     } else {
         this.style.color = "initial";
         errorDisplay.innerHTML = "&nbsp";
