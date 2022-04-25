@@ -270,7 +270,9 @@ p.lead {
 }
 
 .calculator-card {
-    background-color:var(--s-blue-2)!important;
+    background-color: #79c1cc34!important; 
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+    margin-top: 20px;
 }
 
 .quiz-card-header {
@@ -279,6 +281,7 @@ p.lead {
 
 .quiz-card {
     border: 5px solid #4b5887!important;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
 }
 
 .quiz-title {
