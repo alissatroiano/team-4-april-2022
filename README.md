@@ -337,6 +337,15 @@ In addition to the Navbar features the footer displays:
 - [kWh Calculator](https://www.inchcalculator.com/convert/kilowatt-hour-per-hundred-kilometers-to-mile-per-kilowatt-hour/) - Calculator to verify the kWh/mi
 - [Eco Cost Savings](https://ecocostsavings.com/electric-car-kwh-per-mile-list/) - Reference for most of the car kWh/mi
 
+Default Values for Savings Calculator :
+- Average American yearly mileage is 14,263 according to the Federal Highway Administration.
+https://www.thezebra.com/resources/driving/average-miles-driven-per-year/#average-miles-driven-per-year-by-state
+- Average residential electricity rate at 13.72 cents per kilowatt-hour (kWh).
+https://www.saveonenergy.com/electricity-rates/#:~:text=The%20average%20residential%20electricity%20rate,is%2011.36%20cents%20per%20kWh.
+- Miles Per Kilowatt hour consumption of 4 taken from the Tesla Model 3 Standard Range Plus and the Fiat 500e.
+https://www.selectcarleasing.co.uk/hybrid-electric-cars/guides/miles-per-kwh
+- Average fuel price of petrol obtained on 20/04/2022 from https://gasprices.aaa.com/
+
 ### **Content**
 - [Design Shack](http://127.0.0.1:5500/index.html#mission) - CSS `text-shadow` styles were copied from Design Shack's article, ["12 Fun CSS Text Shadows You Can Copy and Paste"](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
   
