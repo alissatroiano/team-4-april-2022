@@ -71,8 +71,7 @@ function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
             fuelPrice = customFuelPrice.value;
         } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
-            alert("Please enter a valid input for Fuel Price");
-            return False;
+            alert("Please enter a valid input for Fuel Price. The calculator will use the default average fuel price for this calculation");
         }
     }
     // Check if custom vehicle MPG is supplied
