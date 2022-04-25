@@ -35,21 +35,21 @@ function setOptionVariable(value) {
 // function to display the car search results
 function displaySearchResults(resultsList) {
     // find the display element and clear it
-    display = document.getElementById("searchResultsDisplay")
-    display.innerHTML = ""
+    display = document.getElementById("searchResultsDisplay");
+    display.innerHTML = "";
     // check if list contains any cars
     if (resultsList.length > 0) {
         if (resultsList.length >= 2) {
             // more than 2 results in the list, shuffle the list and take the first 2 results
             if (resultsList.length > 2){
-                resultsList = resultsList.sort(() => Math.random() - 0.5)
-                var resultsList = resultsList.slice(0,2)
+                resultsList = resultsList.sort(() => Math.random() - 0.5);
+                var resultsList = resultsList.slice(0,2);
             }
         }
         // for all the items in the results, display thier info on screen
         for (const car of resultsList) {
-            carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh'])
-            savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings} a year with this EV!</p>`
+            carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh']);
+            savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings} a year with this EV!</p>`;
             display.innerHTML += `
             <div class="card car-display-card quiz-results-bg">
                 <div class="card-header quiz-results-header">
@@ -65,7 +65,7 @@ function displaySearchResults(resultsList) {
                     ${carFuelSavings > 0 ?  savingStatement : ""}
                 </div>
             </div>
-            `
+            `;
         }
     } else {  // error message display
         display.innerHTML = `
@@ -75,20 +75,20 @@ function displaySearchResults(resultsList) {
                     <p>Please make a different selection and try again</p>
                 </div>
             </div>
-        `
+        `;
     }
 }
 
 function searchButtonClick() {
     // validate user input with an alert if options are not clicked
     if (budgetInput == null && carSizeInput == null) {
-        alert("please select your car budget above and prefered car size above")
+        alert("please select your car budget above and prefered car size above");
         return false;
     } else if (carSizeInput == null) {
-        alert("please select a car size above")
+        alert("please select a car size above");
         return false;
     } else if (budgetInput == null) {
-        alert("please select your car budget above")
+        alert("please select your car budget above");
         return false;
     } else {
         // collect data from the local database https://alissatroiano.github.io/team-4-april-2022/electric.json
@@ -104,7 +104,7 @@ function searchButtonClick() {
                 // filer all vehicles by vehicle class/size
                 for (let i = 0; i < carData.length; i++) {
                     if (carData[i]["VEHICLE CLASS"].toLowerCase() == carSizeInput.slice(3)) {
-                        resultsStorage.push(carData[i])
+                        resultsStorage.push(carData[i]);
                     }
                 }
                 // filer all vehicles by price in brackets
@@ -112,7 +112,7 @@ function searchButtonClick() {
                     case "Under30":
                         for (let i = 0; i < resultsStorage.length; i++) {
                             if (resultsStorage[i]["data_price"] < 30000) {
-                                searchResults.push(resultsStorage[i])
+                                searchResults.push(resultsStorage[i]);
                             }
                         }
                         break;
@@ -126,13 +126,13 @@ function searchButtonClick() {
                     case "Over50":
                         for (let i = 0; i < resultsStorage.length; i++) {
                             if (resultsStorage[i]["data_price"] > 50000) {
-                                searchResults.push(resultsStorage[i])
+                                searchResults.push(resultsStorage[i]);
                             }
                         }
                         break;
                     }
                 // call the display search results function
-                displaySearchResults(searchResults)
+                displaySearchResults(searchResults);
             }
-        )}
+        )};
     }
