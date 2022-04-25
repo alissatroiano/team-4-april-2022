@@ -262,7 +262,7 @@ In addition to the Navbar features the footer displays:
 
 ### **Known Bugs**
 
-- Fuel Input Validates for every car search result calculation if input is Invalid which could lead to multiple alerts for multiple results.
+- Fuel Input Validates for every car search result calculation if input is Invalid which could lead to multiple alerts if there is multiple results.
 
 ## **DEPLOYMENT**
 
