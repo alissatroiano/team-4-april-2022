@@ -260,14 +260,9 @@ In addition to the Navbar features the footer displays:
 13. Make suggested changes until the Accessibility score reaches 100%
 14. Mark test, "passed"
 
-| **Bug ID** | **Description of Bug** | **Problem** | **Fix/Solution** |
-|||||
-|||||
-|||||
-|||||
+### **Known Bugs**
 
-
-### **Known Limitations**
+- Fuel Input Validates for every car search result calculation if input is Invalid which could lead to multiple alerts if there is multiple results.
 
 ## **DEPLOYMENT**
 
