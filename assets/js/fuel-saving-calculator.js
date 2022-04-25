@@ -24,7 +24,7 @@ function clearMPGSelection() {
 
 function clearMileageSelection() {
     mileageSliderValue.innerHTML = "Unselected"; // Reset Mileage selection
-    mileageSlider.value = 45000;
+    mileageSlider.value = 41000;
 }
 
 function validateMPGInput(value) {
