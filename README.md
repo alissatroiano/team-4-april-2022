@@ -34,7 +34,8 @@ With climate change becoming a increasing urgent problem in our lives, [vehicle 
 
 To help educate and encourage the everyday motorist to consider moving to an alternativly fueled vehicle, we have created a website that easily provides the user with more eco-friendly alternatives to the type of vehicle they are looking for. The website also provides more information about the problems and threats caused by ICEs and what the benefits of making a change could be, for the enviroment and the motorist.
 
-This project has been build as part of Code Institutes Earth Day Hackathon Event April 2022 by the team Mother Nature's Minions.
+This project has been build as part of Code Institutes Earth Day Hackathon Event April 2022 by the team Mother Nature's Minions and won first place! <br>
+![First Place Badge](https://github.com/alissatroiano/team-4-april-2022/blob/main/docs/readme_img/firstPlaceBadge.png?raw=true)
 
 ## UX
 
