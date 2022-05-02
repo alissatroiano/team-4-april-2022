@@ -48,7 +48,7 @@ function displaySearchResults(resultsList) {
         }
         // for all the items in the results, display thier info on screen
         for (const car of resultsList) {
-            carFuelSavings = calculateFuelSavings(true, 1/car['m/kWh']);
+            carFuelSavings = calculateYearlySavings(1/car['m/kWh']);
             savingStatement =  `<p class="mb-0 text-success">Save approx $${carFuelSavings.toLocaleString()} a year with this EV!</p>`;
             display.innerHTML += `
             <div class="card car-display-card quiz-results-bg mt-3">
@@ -80,6 +80,8 @@ function displaySearchResults(resultsList) {
 }
 
 function searchButtonClick() {
+    // Check calculator input values
+    checkCalculatorInputValues()
     // validate user input with an alert if options are not clicked
     if (budgetInput == null && carSizeInput == null) {
         alert("please select your car budget above and prefered car size above");

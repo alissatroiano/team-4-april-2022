@@ -55,7 +55,7 @@ var electricityPrice = 13.72; // Per kWh in cents
 var mileage = 14263; // Average American Yearly Mileage
 
 // Check and Validate Calculator Input Values
-function checkInputValues() {
+function checkCalculatorInputValues() {
     // Check if custom vehicle MPG is supplied
     vehicleMPGInput = document.getElementById("mpgValue").innerHTML;
     if (vehicleMPGInput != "Unselected") {
@@ -71,14 +71,14 @@ function checkInputValues() {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
             fuelPrice = customFuelPrice.value;
         } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
-            alert("Please enter a valid input for Fuel Price. The calculator will use the default average fuel price for this calculation");
+            alert("Please enter a valid input for Fuel Price. The calculator will use the Default Average Fuel Price of $" + fuelPrice + " for this calculation");
         }
     }
 }
 
 // Calculate Yearly Savings
-function calculateYearlySavings() {
-    let electricYearCost = ((mileage / electricKwhUsage) * electricityPrice) / 100;
+function calculateYearlySavings(carKwhUsage=electricKwhUsage) {
+    let electricYearCost = ((mileage / carKwhUsage) * electricityPrice) / 100;
     let fuelYearCost = (mileage / vehicleMPG) * fuelPrice;
     let yearCostSaving = Math.round((fuelYearCost - electricYearCost) * 100) / 100;
     return yearCostSaving;
@@ -99,25 +99,9 @@ function displayCalculationResults(savingAmount) {
     `;
 }
 
-// Fuel Savings Calculator
-
+// Fuel Savings Calculator Click Function
 function calculateFuelSavings() {
-    checkInputValues();
+    checkCalculatorInputValues();
     let yearCostSaving = calculateYearlySavings();
     displayCalculationResults(yearCostSaving)
 }
-
-
-// // mile per kWh, Changes dependant on the car displayed?
-// if (individualDisplay == true) {
-//     var electricKwhUsage = customElectricKwhUsage
-// } else {
-//     var electricKwhUsage = 4;
-// }
-// if (individualDisplay == false) {
-//     if (yearCostSaving > 0) {
-//         displayCalculationResults(yearCostSaving)
-//     }
-// } else {
-//     return yearCostSaving
-// }
