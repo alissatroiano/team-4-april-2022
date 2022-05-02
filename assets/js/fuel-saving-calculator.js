@@ -47,7 +47,7 @@ document.getElementById("customFuelPrice").oninput = function()  {
 // Yearly Savings Calculator Functions
 
 // Set Default Variables
-var fuelPrice = 4.23 // Per Gallon in USD - Average across USA on 20/04/2022
+var fuelPrice = 4.23; // Per Gallon in USD - Average across USA on 20/04/2022
 var vehicleMPG = 36; // Average American Vehicle MPG
 var electricKwhUsage = 4;
 var electricityPrice = 13.72; // Per kWh in cents
@@ -59,15 +59,15 @@ function checkSliderInput(targetElement, value) {
     if (inputValue != "Unselected") {
         value = inputValue;
     }
-    return value
+    return value;
 }
 
 // Check and Validate Calculator Input Values
 function checkCalculatorInputValues() {
     // Check if custom vehicle MPG is supplied
-    vehicleMPG = checkSliderInput("mpgValue", vehicleMPG)
+    vehicleMPG = checkSliderInput("mpgValue", vehicleMPG);
     // Check if custom vehicle Mileage is supplied
-    mileage = checkSliderInput("mileageValue", mileage)
+    mileage = checkSliderInput("mileageValue", mileage);
 
     // Check if custom fuel price is supplied and validate
     if (customFuelPrice.value) {
@@ -106,5 +106,5 @@ function displayCalculationResults(savingAmount) {
 function calculateFuelSavings() {
     checkCalculatorInputValues();
     let yearCostSaving = calculateYearlySavings();
-    displayCalculationResults(yearCostSaving)
+    displayCalculationResults(yearCostSaving);
 }

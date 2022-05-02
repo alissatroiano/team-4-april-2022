@@ -43,7 +43,7 @@ function displaySearchResults(resultsList) {
             // more than 2 results in the list, shuffle the list and take the first 2 results
             if (resultsList.length > 2){
                 resultsList = resultsList.sort(() => Math.random() - 0.5);
-                var resultsList = resultsList.slice(0,2);
+                resultsList = resultsList.slice(0,2);
             }
         }
         // for all the items in the results, display thier info on screen
@@ -53,16 +53,16 @@ function displaySearchResults(resultsList) {
             display.innerHTML += `
             <div class="card car-display-card quiz-results-bg mt-3">
                 <div class="card-header quiz-results-header">
-                    <h5 class="card-title">${car['MANUFACTURER']} - ${car['MODEL']}</h5>
+                    <h5 class="card-title">${car.MANUFACTURER} - ${car.MODEL}</h5>
                 </div>
                 <div class="card-body py-5">
-                    <img src="${car['img']}" alt="Image of a ${car['MANUFACTURER']} ${car['MODEL']}">
-                    <h5>$${car['PRICE']}</h5>
+                    <img src="${car.img}" alt="Image of a ${car.MANUFACTURER} ${car.MODEL}">
+                    <h5>$${car.PRICE}</h5>
                     <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
-                    <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
-                    <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
+                    <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>d
+                    <p class="mb-0">Kilo Watt Hours per Mile - ${car['m/kWh']}</p>
                 
-                    ${carFuelSavings > 0 ?  savingStatement : ""}
+                    ${carFuelSavings > 0 ?  savingStatement : "&nbsp"}
                 </div>
             </div>
             `;
@@ -81,7 +81,7 @@ function displaySearchResults(resultsList) {
 
 function searchButtonClick() {
     // Check calculator input values
-    checkCalculatorInputValues()
+    checkCalculatorInputValues();
     // validate user input with an alert if options are not clicked
     if (budgetInput == null && carSizeInput == null) {
         alert("please select your car budget above and prefered car size above");
@@ -113,21 +113,21 @@ function searchButtonClick() {
                 switch (budgetInput.slice(3)) {
                     case "Under30":
                         for (let i = 0; i < resultsStorage.length; i++) {
-                            if (resultsStorage[i]["data_price"] < 30000) {
+                            if (resultsStorage[i].data_price < 30000) {
                                 searchResults.push(resultsStorage[i]);
                             }
                         }
                         break;
                     case "30To50":
                         for (let i = 0; i < resultsStorage.length; i++) {
-                            if (resultsStorage[i]["data_price"] >= 30000 && resultsStorage[i]["data_price"] <= 50000) {
-                                searchResults.push(resultsStorage[i])
+                            if (resultsStorage[i].data_price >= 30000 && resultsStorage[i].data_price <= 50000) {
+                                searchResults.push(resultsStorage[i]);
                             }
                         }
                         break;
                     case "Over50":
                         for (let i = 0; i < resultsStorage.length; i++) {
-                            if (resultsStorage[i]["data_price"] > 50000) {
+                            if (resultsStorage[i].data_price > 50000) {
                                 searchResults.push(resultsStorage[i]);
                             }
                         }
@@ -136,5 +136,5 @@ function searchButtonClick() {
                 // call the display search results function
                 displaySearchResults(searchResults);
             }
-        )};
+        );}
     }
