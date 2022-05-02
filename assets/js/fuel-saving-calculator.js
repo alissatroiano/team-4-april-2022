@@ -1,4 +1,4 @@
-// Additional Data Input Controls 
+// Savings Calculator Input Controls 
 
 // template taken from https://www.w3schools.com/howto/howto_js_rangeslider.asp
 var mpgSlider = document.getElementById("mpgRange");
@@ -31,9 +31,8 @@ function validateMPGInput(value) {
     return /^\d{0,3}(\.\d{0,2})?$/.test(value);
 }
 
-// MPG Input Validation Error Message
+// Live MPG Input Validation Error Message
 document.getElementById("customFuelPrice").oninput = function()  {
-    // To be used when data is submitted
     value = this.value;
     errorDisplay = document.getElementById("mpgValidatorErrorMessage");
     if (validateMPGInput(value) == false){
@@ -54,18 +53,22 @@ var electricKwhUsage = 4;
 var electricityPrice = 13.72; // Per kWh in cents
 var mileage = 14263; // Average American Yearly Mileage
 
+// Function to check for and store slider input
+function checkSliderInput(targetElement, value) {
+    inputValue = document.getElementById(targetElement).innerHTML;
+    if (inputValue != "Unselected") {
+        value = inputValue;
+    }
+    return value
+}
+
 // Check and Validate Calculator Input Values
 function checkCalculatorInputValues() {
     // Check if custom vehicle MPG is supplied
-    vehicleMPGInput = document.getElementById("mpgValue").innerHTML;
-    if (vehicleMPGInput != "Unselected") {
-        vehicleMPG = vehicleMPGInput;
-    }
+    vehicleMPG = checkSliderInput("mpgValue", vehicleMPG)
     // Check if custom vehicle Mileage is supplied
-    let mileageInput = document.getElementById("mileageValue").innerHTML;
-    if (mileageInput != "Unselected") {
-        mileage = mileageInput;
-    }
+    mileage = checkSliderInput("mileageValue", mileage)
+
     // Check if custom fuel price is supplied and validate
     if (customFuelPrice.value) {
         if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
