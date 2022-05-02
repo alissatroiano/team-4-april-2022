@@ -1,4 +1,4 @@
-// Additional Data Input Controls 
+// Savings Calculator Input Controls 
 
 // template taken from https://www.w3schools.com/howto/howto_js_rangeslider.asp
 var mpgSlider = document.getElementById("mpgRange");
@@ -31,9 +31,8 @@ function validateMPGInput(value) {
     return /^\d{0,3}(\.\d{0,2})?$/.test(value);
 }
 
-// MPG Validation
+// Live MPG Input Validation Error Message
 document.getElementById("customFuelPrice").oninput = function()  {
-    // To be used when data is submitted
     value = this.value;
     errorDisplay = document.getElementById("mpgValidatorErrorMessage");
     if (validateMPGInput(value) == false){
@@ -45,8 +44,50 @@ document.getElementById("customFuelPrice").oninput = function()  {
     }
 };
 
-// Fuel Savings Display Message
+// Yearly Savings Calculator Functions
 
+// Set Default Variables
+var fuelPrice = 4.23; // Per Gallon in USD - Average across USA on 20/04/2022
+var vehicleMPG = 36; // Average American Vehicle MPG
+var electricKwhUsage = 4;
+var electricityPrice = 13.72; // Per kWh in cents
+var mileage = 14263; // Average American Yearly Mileage
+
+// Function to check for and store slider input
+function checkSliderInput(targetElement, value) {
+    inputValue = document.getElementById(targetElement).innerHTML;
+    if (inputValue != "Unselected") {
+        value = inputValue;
+    }
+    return value;
+}
+
+// Check and Validate Calculator Input Values
+function checkCalculatorInputValues() {
+    // Check if custom vehicle MPG is supplied
+    vehicleMPG = checkSliderInput("mpgValue", vehicleMPG);
+    // Check if custom vehicle Mileage is supplied
+    mileage = checkSliderInput("mileageValue", mileage);
+
+    // Check if custom fuel price is supplied and validate
+    if (customFuelPrice.value) {
+        if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
+            fuelPrice = customFuelPrice.value;
+        } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
+            alert("Please enter a valid input for Fuel Price. The calculator will use the Default Average Fuel Price of $" + fuelPrice + " for this calculation");
+        }
+    }
+}
+
+// Calculate Yearly Savings
+function calculateYearlySavings(carKwhUsage=electricKwhUsage) {
+    let electricYearCost = ((mileage / carKwhUsage) * electricityPrice) / 100;
+    let fuelYearCost = (mileage / vehicleMPG) * fuelPrice;
+    let yearCostSaving = Math.round((fuelYearCost - electricYearCost) * 100) / 100;
+    return yearCostSaving;
+}
+
+// Fuel Savings Display Message
 function displayCalculationResults(savingAmount) {
     document.getElementById("result-display").innerHTML = `
     <div class="row">
@@ -61,50 +102,9 @@ function displayCalculationResults(savingAmount) {
     `;
 }
 
-// Fuel Savings Calculator
-
-function calculateFuelSavings(individualDisplay=false, customElectricKwhUsage) {
-    // Per Gallon in dollars
-    // Check if custom fuel price is supplied
-    var fuelPrice=4.23
-    if (customFuelPrice.value) {
-        if (customFuelPrice.value > 0 && validateMPGInput(value) == true) {
-            fuelPrice = customFuelPrice.value;
-        } else if (customFuelPrice.value > 0 && validateMPGInput(value) == false) {
-            alert("Please enter a valid input for Fuel Price. The calculator will use the default average fuel price for this calculation");
-        }
-    }
-    // Check if custom vehicle MPG is supplied
-    let vehicleMPG = document.getElementById("mpgValue").innerHTML;
-    if (vehicleMPG == "Unselected") {
-        vehicleMPG = 36;
-    } 
-
-    // Per kWh in cents
-    const electricityPrice = 13.72;
-    // mile per kWh, Changes dependant on the car displayed?
-    if (individualDisplay == true) {
-        var electricKwhUsage = customElectricKwhUsage
-    } else {
-        var electricKwhUsage = 4;
-    }
-    
-    // Store variables from page
-    let mileage = document.getElementById("mileageValue").innerHTML;
-    if (mileage == "Unselected") {
-        mileage = 14263;
-    }
-    
-    // Calculate the difference in yearly cost
-    let electricYearCost = ((mileage / electricKwhUsage) * electricityPrice)/100;
-    let fuelYearCost = (mileage / vehicleMPG) * fuelPrice;
-    let yearCostSaving = Math.round((fuelYearCost - electricYearCost) * 100) / 100;
-    
-    if (individualDisplay == false) {
-        if (yearCostSaving > 0) {
-            displayCalculationResults(yearCostSaving)
-        }
-    } else {
-        return yearCostSaving
-    }
+// Fuel Savings Calculator Click Function
+function calculateFuelSavings() {
+    checkCalculatorInputValues();
+    let yearCostSaving = calculateYearlySavings();
+    displayCalculationResults(yearCostSaving);
 }
