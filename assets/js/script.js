@@ -61,7 +61,7 @@ function displaySearchResults(resultsList) {
                     <p class="mb-0">Engine Power - ${car['ENGINE POWER']}</p>
                     <p class="mb-0">Battery Capacity - ${car['BATTERY CAPACITY']}</p>
                     <p class="mb-0">Miles Per Kilo Watt Hour - ${car['m/kWh']}</p>
-                
+                    <a href="#"  class="stretched-link" onclick="window.open('http://www.google.com/', '_system', 'location=yes'); return false;"></a>
                     ${carFuelSavings > 0 ?  savingStatement : ""}
                 </div>
             </div>

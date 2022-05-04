@@ -11,7 +11,7 @@
   "m/kWh": 0.41,
   "PRICE": " 22,000 USD",
   "data_price": 22000,
-  "link": "https://www.seat.com/carworlds/mii-electric/overview.html"
+  "LINK": "https://www.seat.com/carworlds/mii-electric/overview.html"
 },{
   "_id": {
     "$oid": "6261e6cd2f2f376eabd2aedc"
@@ -25,7 +25,7 @@
   "m/kWh": 0.31,
   "PRICE": "94,990 USD",
   "data_price": 94990,
-  "link": "https://www.tesla.com/models"
+  "LINK": "https://www.tesla.com/models"
 },{
   "_id": {
     "$oid": "6261e6cf2f2f376eabd2aedd"
@@ -39,7 +39,7 @@
   "m/kWh": 0.3,
   "PRICE": "32,500 USD",
   "data_price": 32500,
-  "link": "https://www.fiat.com/500-electric"
+  "LINK": "https://www.fiat.com/500-electric"
 },{
   "_id": {
     "$oid": "6261e6d12f2f376eabd2aede"
@@ -53,7 +53,7 @@
   "m/kWh": 0.29,
   "PRICE": "44,450 USD",
   "data_price": 44450,
-  "link": "https://www.bmwusa.com/certified-preowned/i3-electric-vehicle.html"
+  "LINK": "https://www.bmwusa.com/certified-preowned/i3-electric-vehicle.html"
 },{
   "_id": {
     "$oid": "6261e6d32f2f376eabd2aedf"
@@ -67,7 +67,7 @@
   "m/kWh": 0.34,
   "PRICE": "43,895 USD",
   "data_price": 43895,
-  "link": "https://www.ford.com/suvs/mach-e/models/mach-e-select/"
+  "LINK": "https://www.ford.com/suvs/mach-e/models/mach-e-select/"
 },{
   "_id": {
     "$oid": "6261e6d42f2f376eabd2aee0"
@@ -81,7 +81,7 @@
   "m/kWh": 0.27,
   "PRICE": "28,450 USD",
   "data_price": 28450,
-  "link": "https://www.hyundaiusa.com/us/en/vehicles/kona/se"
+  "LINK": "https://www.hyundaiusa.com/us/en/vehicles/kona/se"
 },{
   "_id": {
     "$oid": "6261e6d62f2f376eabd2aee1"
@@ -95,7 +95,7 @@
   "m/kWh": 0.25,
   "PRICE": "29,557 USD",
   "data_price": 29557,
-  "link": "https://www.hyundaiusa.com/us/en/vehicles/ioniq-hybrid"
+  "LINK": "https://www.hyundaiusa.com/us/en/vehicles/ioniq-hybrid"
 },{
   "_id": {
     "$oid": "6261e6d72f2f376eabd2aee2"
@@ -122,7 +122,7 @@
   "m/kWh": 0.3,
   "PRICE": "38,500 USD",
   "data_price": 38500,
-  "link": "https://www.kia.com/uk/new-cars/niro/"
+  "LINK": "https://www.kia.com/uk/new-cars/niro/"
 },{
   "_id": {
     "$oid": "6261e6db2f2f376eabd2aee4"
@@ -136,7 +136,7 @@
   "m/kWh": 0.31,
   "PRICE": "34,750 USD",
   "data_price": 34750,
-  "link": "https://ev-chargers.com/mini/cooper/"
+  "LINK": "https://ev-chargers.com/mini/cooper/"
 },{
   "_id": {
     "$oid": "6261e6f92f2f376eabd2aee5"
@@ -176,7 +176,7 @@
   "m/kWh": 999,
   "PRICE": "69,900 USD",
   "data_price": 69900,
-  "link": "https://www.tesla.com/cybertruck"
+  "LINK": "https://www.tesla.com/cybertruck"
 },{
   "_id": {
     "$oid": "62629acb7858ea130968e7ab"
@@ -190,7 +190,7 @@
   "m/kWh": 0.43,
   "PRICE": "56,395 USD",
   "data_price": 56395,
-  "link": "https://www.volvocars.com/intl/cars/xc40-electric/"
+  "LINK": "https://www.volvocars.com/intl/cars/xc40-electric/"
 },{
   "_id": {
     "$oid": "62629ad77858ea130968e7ac"
@@ -204,7 +204,7 @@
   "m/kWh": 0.5,
   "PRICE": "187,610 UDS",
   "data_price": 187610,
-  "link": "https://www.porsche.com/usa/models/taycan/taycan-models/taycan-turbo-s/"
+  "LINK": "https://www.porsche.com/usa/models/taycan/taycan-models/taycan-turbo-s/"
 },{
   "_id": {
     "$oid": "62629ae17858ea130968e7ad"
@@ -218,7 +218,7 @@
   "m/kWh": 0.37,
   "PRICE": " 63,000 USD",
   "data_price": 63000,
-  "link": "https://www.polestar.com/us/polestar-2/performance-pack/"
+  "LINK": "https://www.polestar.com/us/polestar-2/performance-pack/"
 },{
   "_id": {
     "$oid": "62629ae77858ea130968e7ae"
@@ -232,7 +232,7 @@
   "m/kWh": 0.35,
   "PRICE": " 67,900 USD",
   "data_price": 67900,
-  "link": "https://www.mbusa.com/en/vehicles/class/s-class/sedan?sd_campaign_type=Search&sd_digadprov=Resolution&sd_campaign=Corporate_Brand_LF_General&sd_channel=GOOGLE&sd_adid=General&sd_digadkeyword=benz&gclid=Cj0KCQjwyMiTBhDKARIsAAJ-9VttwkeAgBQE8jhbYLmXCR7E89Lqs-sK8m_fcX5ES8-QoLsDE9oDSbIaAiNqEALw_wcB&gclsrc=aw.ds"
+  "LINK": "https://www.mbusa.com/en/vehicles/class/s-class/sedan?sd_campaign_type=Search&sd_digadprov=Resolution&sd_campaign=Corporate_Brand_LF_General&sd_channel=GOOGLE&sd_adid=General&sd_digadkeyword=benz&gclid=Cj0KCQjwyMiTBhDKARIsAAJ-9VttwkeAgBQE8jhbYLmXCR7E89Lqs-sK8m_fcX5ES8-QoLsDE9oDSbIaAiNqEALw_wcB&gclsrc=aw.ds"
 },{
   "_id": {
     "$oid": "62629aed7858ea130968e7af"
@@ -246,7 +246,7 @@
   "m/kWh": 0.44,
   "PRICE": " 69,500 USD",
   "data_price": 69500,
-  "link": "https://www.jaguarusa.com/all-models/i-pace/index.html"
+  "LINK": "https://www.jaguarusa.com/all-models/i-pace/index.html"
 },{
   "_id": {
     "$oid": "62629af27858ea130968e7b0"
@@ -260,7 +260,7 @@
   "m/kWh": 0.46,
   "PRICE": "81,800 USD",
   "data_price": 81800,
-  "link": "https://www.audiusa.com/us/web/en/models/e-tron/e-tron/2022/overview.html"
+  "LINK": "https://www.audiusa.com/us/web/en/models/e-tron/e-tron/2022/overview.html"
 },{
   "_id": {
     "$oid": "62629af77858ea130968e7b1"
@@ -274,7 +274,7 @@
   "m/kWh": 0.43,
   "PRICE": "99,990 USD",
   "data_price": 99990,
-  "link": "https://www.tesla.com/modelx"
+  "LINK": "https://www.tesla.com/modelx"
 },{
   "_id": {
     "$oid": "6265b60148cd98d14b35934c"
@@ -301,7 +301,7 @@
   "m/kWh": 0.24,
   "PRICE": "37,750 USD",
   "data_price": 37750,
-  "link": "https://www.miniusa.com/model/electric-hardtop.html"
+  "LINK": "https://www.miniusa.com/model/electric-hardtop.html"
 },{
   "_id": {
     "$oid": "6265bc2348cd98d14b35934f"
@@ -315,7 +315,7 @@
   "m/kWh": 0.23,
   "PRICE": "50,031 USD",
   "data_price": 50031,
-  "link": "https://hondae.honda.ie/"
+  "LINK": "https://hondae.honda.ie/"
 },{
   "_id": {
     "$oid": "6265be8748cd98d14b359350"
@@ -329,5 +329,5 @@
   "m/kWh": 0.24,
   "PRICE": "29,566 USD",
   "data_price": 29566,
-  "link": "https://www.volkswagen.com/en/models/id3-pure/"
+  "LINK": "https://www.volkswagen.com/en/models/id3-pure/"
 }]
